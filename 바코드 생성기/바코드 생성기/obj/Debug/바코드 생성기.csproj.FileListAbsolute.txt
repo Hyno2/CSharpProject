@@ -1,0 +1,27 @@
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\bin\Debug\바코드 생성기.exe.config
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\bin\Debug\바코드 생성기.exe
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\bin\Debug\바코드 생성기.pdb
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.csprojAssemblyReference.cache
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\obj\Debug\바코드_생성기.Form1.resources
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\obj\Debug\바코드_생성기.Properties.Resources.resources
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.csproj.GenerateResource.cache
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.csproj.CoreCompileInputs.cache
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.exe
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.pdb
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\bin\Debug\BarcodeStandard.dll
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\bin\Debug\System.Drawing.Common.dll
+C:\Users\안수진\Desktop\IT TEST\1. Winform\04. 바코드 생성기\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.csproj.CopyComplete
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\bin\Debug\바코드 생성기.exe.config
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\bin\Debug\바코드 생성기.exe
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\bin\Debug\바코드 생성기.pdb
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\bin\Debug\BarcodeStandard.dll
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\bin\Debug\System.Drawing.Common.dll
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\obj\Debug\바코드_생성기.Form1.resources
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\obj\Debug\바코드_생성기.Properties.Resources.resources
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.csproj.GenerateResource.cache
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.csproj.CopyComplete
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.exe
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\obj\Debug\바코드 생성기.pdb
+C:\Users\user\Desktop\바코드 생성기\바코드 생성기\bin\Debug\System.Numerics.Vectors.dll
