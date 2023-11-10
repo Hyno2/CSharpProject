@@ -32,7 +32,7 @@ namespace CSharpProject
                     product.Inven_Barcode = item["Inven_Barcode"].ToString();
                     product.Inven_Company = item["Inven_Company"].ToString();
                     product.Inven_Kcal = item["Inven_Kcal"].ToString();
-                    product.Inven_Cnt = item["Inven_Cnt"].ToString();
+                    product.재고 = item["Inven_Cnt"].ToString();
                    
                     Products.Add(product);
                 }

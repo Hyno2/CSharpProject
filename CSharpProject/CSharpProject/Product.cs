@@ -15,6 +15,6 @@ namespace CSharpProject
         public string Inven_Name { get; set; }
         public string Inven_Kcal { get; set; }
         public string Inven_Company { get; set; }
-        public string Inven_Cnt { get; set; }
+        public string 재고 { get; set; }
     }
 }
