@@ -26,3 +26,18 @@ C:\Users\user\Desktop\연습이용\맛집API해보기\bin\Debug\Newtonsoft.Json.
 C:\Users\user\Desktop\연습이용\맛집API해보기\obj\Debug\맛집API해보기.csproj.CopyComplete
 C:\Users\USER\Desktop\연습이용\맛집API해보기\obj\Debug\맛집API해보기.Login.resources
 C:\Users\USER\Desktop\연습이용\맛집API해보기\obj\Debug\맛집API해보기.Sign_Up.resources
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\bin\Debug\맛집API해보기.exe.config
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\bin\Debug\맛집API해보기.exe
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\bin\Debug\맛집API해보기.pdb
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\bin\Debug\Newtonsoft.Json.dll
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\bin\Debug\Newtonsoft.Json.xml
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.AssemblyReference.cache
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Form1.resources
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Login.resources
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Properties.Resources.resources
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Sign_Up.resources
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.GenerateResource.cache
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.CoreCompileInputs.cache
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.CopyComplete
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.exe
+C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.pdb
