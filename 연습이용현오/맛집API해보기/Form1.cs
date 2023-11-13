@@ -123,10 +123,10 @@ namespace 맛집API해보기
                     wc.Encoding = Encoding.UTF8;
                     Good temp = new Good(
                         jarr[count]["cnt"].ToString(),
+                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["OPENDATA_ID"].ToString(),
                         jarr[count]["GNG_CS"].ToString(),
                         jarr[count]["FD_CS"].ToString(),
-                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["MNU"].ToString().Replace("<br />", ", "),
                         jarr[count]["SMPL_DESC"].ToString(),
                         jarr[count]["MBZ_HR"].ToString());
@@ -150,10 +150,10 @@ namespace 맛집API해보기
                     wc.Encoding = Encoding.UTF8;
                     Good temp = new Good(
                         jarr[count]["cnt"].ToString(),
+                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["OPENDATA_ID"].ToString(),
                         jarr[count]["GNG_CS"].ToString(),
                         jarr[count]["FD_CS"].ToString(),
-                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["MNU"].ToString().Replace("<br />", ", "),
                         jarr[count]["SMPL_DESC"].ToString(),
                         jarr[count]["MBZ_HR"].ToString());
@@ -177,10 +177,10 @@ namespace 맛집API해보기
                     wc.Encoding = Encoding.UTF8;
                     Good temp = new Good(
                         jarr[count]["cnt"].ToString(),
+                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["OPENDATA_ID"].ToString(),
                         jarr[count]["GNG_CS"].ToString(),
                         jarr[count]["FD_CS"].ToString(),
-                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["MNU"].ToString().Replace("<br />", ", "),
                         jarr[count]["SMPL_DESC"].ToString(),
                         jarr[count]["MBZ_HR"].ToString());
@@ -204,10 +204,10 @@ namespace 맛집API해보기
                     wc.Encoding = Encoding.UTF8;
                     Good temp = new Good(
                         jarr[count]["cnt"].ToString(),
+                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["OPENDATA_ID"].ToString(),
                         jarr[count]["GNG_CS"].ToString(),
                         jarr[count]["FD_CS"].ToString(),
-                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["MNU"].ToString().Replace("<br />", ", "),
                         jarr[count]["SMPL_DESC"].ToString(),
                         jarr[count]["MBZ_HR"].ToString());
@@ -231,10 +231,10 @@ namespace 맛집API해보기
                     wc.Encoding = Encoding.UTF8;
                     Good temp = new Good(
                         jarr[count]["cnt"].ToString(),
+                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["OPENDATA_ID"].ToString(),
                         jarr[count]["GNG_CS"].ToString(),
                         jarr[count]["FD_CS"].ToString(),
-                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["MNU"].ToString().Replace("<br />", ", "),
                         jarr[count]["SMPL_DESC"].ToString(),
                         jarr[count]["MBZ_HR"].ToString());
@@ -258,10 +258,10 @@ namespace 맛집API해보기
                     wc.Encoding = Encoding.UTF8;
                     Good temp = new Good(
                         jarr[count]["cnt"].ToString(),
+                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["OPENDATA_ID"].ToString(),
                         jarr[count]["GNG_CS"].ToString(),
                         jarr[count]["FD_CS"].ToString(),
-                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["MNU"].ToString().Replace("<br />", ", "),
                         jarr[count]["SMPL_DESC"].ToString(),
                         jarr[count]["MBZ_HR"].ToString());
@@ -285,10 +285,10 @@ namespace 맛집API해보기
                     wc.Encoding = Encoding.UTF8;
                     Good temp = new Good(
                         jarr[count]["cnt"].ToString(),
+                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["OPENDATA_ID"].ToString(),
                         jarr[count]["GNG_CS"].ToString(),
                         jarr[count]["FD_CS"].ToString(),
-                        jarr[count]["BZ_NM"].ToString(),
                         jarr[count]["MNU"].ToString().Replace("<br />", ", "),
                         jarr[count]["SMPL_DESC"].ToString(),
                         jarr[count]["MBZ_HR"].ToString());
