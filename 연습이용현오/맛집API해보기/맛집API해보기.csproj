@@ -50,6 +50,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBHelper.cs" />
+    <Compile Include="FindID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindID.Designer.cs">
+      <DependentUpon>FindID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindPWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindPWD.Designer.cs">
+      <DependentUpon>FindPWD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,12 @@
     <Compile Include="Sign Up.Designer.cs">
       <DependentUpon>Sign Up.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FindID.resx">
+      <DependentUpon>FindID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindPWD.resx">
+      <DependentUpon>FindPWD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

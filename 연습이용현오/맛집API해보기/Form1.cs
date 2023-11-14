@@ -87,6 +87,8 @@ namespace 맛집API해보기
                     //JSON 형식의 데이터를 문자열로 다운로드
                     string json = wc.DownloadString(apiUrl);
 
+                   
+
                     //JSON데이터 파싱
                     var jArray = JObject.Parse(json);
                     var jarr = jArray["data"];
@@ -148,6 +150,7 @@ namespace 맛집API해보기
             string selectedMatjip = comboBox1.Text;
 
             // 이전 데이터를 지우고 새로운 데이터를 가져옴
+            // 이전 데이터 초기화
             goods.Clear();
             FetchData(selectedMatjip);
 

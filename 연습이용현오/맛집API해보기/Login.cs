@@ -93,13 +93,15 @@ namespace 맛집API해보기
         // 아이디 찾기
         private void linkLabelID_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            FindID findID = new FindID();
+            findID.ShowDialog();
         }
 
         // 비밀번호 찾기
         private void linkLabelPWD_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            FindPWD findPWD = new FindPWD();
+            findPWD.ShowDialog();
         }
 
         // 회원가입

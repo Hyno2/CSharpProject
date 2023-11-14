@@ -41,3 +41,35 @@ C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\
 C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.CopyComplete
 C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.exe
 C:\Users\xenoi\OneDrive\바탕 화면\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.pdb
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\bin\Debug\맛집API해보기.exe.config
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\bin\Debug\맛집API해보기.exe
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\bin\Debug\맛집API해보기.pdb
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\bin\Debug\Newtonsoft.Json.dll
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\bin\Debug\Newtonsoft.Json.xml
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Form1.resources
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Login.resources
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Properties.Resources.resources
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Sign_Up.resources
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.CopyComplete
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.exe
+C:\Users\USER\Desktop\CSharpProject\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.pdb
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\bin\Debug\맛집API해보기.exe.config
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\bin\Debug\맛집API해보기.exe
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\bin\Debug\맛집API해보기.pdb
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\bin\Debug\Newtonsoft.Json.dll
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\bin\Debug\Newtonsoft.Json.xml
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Form1.resources
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Login.resources
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Properties.Resources.resources
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.Sign_Up.resources
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.csproj.CopyComplete
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.exe
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.pdb
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.FindID.resources
+C:\Users\USER\Desktop\연습이용현오\맛집API해보기\obj\Debug\맛집API해보기.FindPWD.resources
