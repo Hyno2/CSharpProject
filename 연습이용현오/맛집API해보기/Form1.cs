@@ -69,8 +69,8 @@ namespace 맛집API해보기
         #endregion
 
         //데이터를 저장할 리스트
-        List<Good> goods = new List<Good>();
-
+        List<GoodMatJip> goodmatjips = new List<GoodMatJip>();
+       
         //데이터를 가져오고 처리하는 메서드
         private void FetchData(string selectedMatjip)
         {
@@ -99,7 +99,7 @@ namespace 맛집API해보기
                     //JSON 데이터를 Good 객체로 변환하여 List에 추가
                     while (count < int.Parse(total.ToString()))
                     {
-                        Good temp = new Good(
+                        GoodMatJip temp = new GoodMatJip(
                             jarr[count]["cnt"].ToString(),
                             jarr[count]["BZ_NM"].ToString(),
                             jarr[count]["OPENDATA_ID"].ToString(),
@@ -109,7 +109,7 @@ namespace 맛집API해보기
                             jarr[count]["SMPL_DESC"].ToString(),
                             jarr[count]["MBZ_HR"].ToString());
 
-                        goods.Add(temp);
+                        goodmatjips.Add(temp);
                         count++;
                     }
 
@@ -136,25 +136,19 @@ namespace 맛집API해보기
             {
                 // DataGridView의 데이터를 초기화하고 goods 리스트를 할당하여 바인딩
                 dataGridView1.DataSource = null;
-                dataGridView1.DataSource = goods;
+                dataGridView1.DataSource = goodmatjips;
                 dataGridView1.ResetBindings();
             }
         }
-
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
             //선택된 맛집 주소를 가져와서 데이터 갱신
             string selectedMatjip = comboBox1.Text;
 
             // 이전 데이터를 지우고 새로운 데이터를 가져옴
             // 이전 데이터 초기화
-            goods.Clear();
+            goodmatjips.Clear();
             FetchData(selectedMatjip);
-
-
             #region 옛날코드2
             //List<Good> goods = new List<Good>();
 
@@ -194,6 +188,87 @@ namespace 맛집API해보기
             //    }
             //}
             #endregion
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string[] matjips = new string[] {"중구","수성구","남구","동구","서구","북구","달서구","달성군" };
+
+            for(int i = 0; i< matjips.Length; i++)
+            {
+                //FetchData(matjips[i]);
+                using (WebClient wc = new WebClient())
+                {
+                    wc.Encoding = Encoding.UTF8;
+
+                    try
+                    {
+                        //API에서 데이터를 가져오는 URL
+                        string apiUrl = "https://www.daegufood.go.kr/kor/api/tasty.html?mode=json&addr=" + matjips[i];
+
+                        //JSON 형식의 데이터를 문자열로 다운로드
+                        string json = wc.DownloadString(apiUrl);
+
+
+
+                        //JSON데이터 파싱
+                        var jArray = JObject.Parse(json);
+                        var jarr = jArray["data"];
+                        var total = jArray["total"];
+
+                        int count = 0;
+
+                        //JSON 데이터를 Good 객체로 변환하여 List에 추가
+                        while (count < int.Parse(total.ToString()))
+                        {
+
+                            DBHelper.insertData(jarr[count]["cnt"].ToString(),
+                                jarr[count]["OPENDATA_ID"].ToString(), 
+                                jarr[count]["GNG_CS"].ToString(),
+                                jarr[count]["FD_CS"].ToString(),
+                                jarr[count]["BZ_NM"].ToString(),
+                                jarr[count]["TLNO"].ToString(),
+                                jarr[count]["MBZ_HR"].ToString(),
+                                jarr[count]["PKPL"].ToString(),
+                                jarr[count]["HP"].ToString(),
+                                jarr[count]["BKN_YN"].ToString(),
+                                jarr[count]["INFN_FCL"].ToString(),
+                                jarr[count]["MNU"].ToString(),
+                                jarr[count]["SMPL_DESC"].ToString(),
+                                jarr[count]["SEAT_CNT"].ToString(),
+                                jarr[count]["SBW"].ToString(),
+                                jarr[count]["PSB_FRN"].ToString(),
+                                jarr[count]["BUS"].ToString(),
+                                jarr[count]["BRFT_YN"].ToString(),
+                                jarr[count]["DSSRT_YN"].ToString());
+                            //GoodMatJip temp = new GoodMatJip(
+                            //    jarr[count]["cnt"].ToString(),
+                            //    jarr[count]["BZ_NM"].ToString(),
+                            //    jarr[count]["OPENDATA_ID"].ToString(),
+                            //    jarr[count]["GNG_CS"].ToString(),
+                            //    jarr[count]["FD_CS"].ToString(),
+                            //    jarr[count]["MNU"].ToString().Replace("<br />", ", "),
+                            //    jarr[count]["SMPL_DESC"].ToString(),
+                            //    jarr[count]["MBZ_HR"].ToString());
+
+                            //goodmatjips.Add(temp);
+                            count++;
+                        }
+
+                        //DataGridView 업데이트
+                        //UpdateDataGridView();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("데이터 가져오기 또는 파싱 오류: " + ex.Message);
+                        // 예외처리: 로깅이나 사용자에게 알림 등을 추가할 수 있음
+                    }
+                }
+                //foreach (GoodMatJip gs in goodmatjips)
+                //{
+                //    DBHelper.insertData(gs);
+                //}
+            }
         }
     }
 }
