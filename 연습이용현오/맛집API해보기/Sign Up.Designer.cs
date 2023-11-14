@@ -124,6 +124,7 @@
             this.DCheckbutton.TabIndex = 9;
             this.DCheckbutton.Text = "중복체크";
             this.DCheckbutton.UseVisualStyleBackColor = true;
+            this.DCheckbutton.Click += new System.EventHandler(this.DCheckbutton_Click);
             // 
             // Checkbutton
             // 
@@ -133,6 +134,7 @@
             this.Checkbutton.TabIndex = 10;
             this.Checkbutton.Text = "확인";
             this.Checkbutton.UseVisualStyleBackColor = true;
+            this.Checkbutton.Click += new System.EventHandler(this.Checkbutton_Click);
             // 
             // Cancelbutton
             // 
