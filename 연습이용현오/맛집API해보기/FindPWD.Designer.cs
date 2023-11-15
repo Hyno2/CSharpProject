@@ -32,7 +32,7 @@
             this.FNCheckbutton = new System.Windows.Forms.Button();
             this.FNametextBox = new System.Windows.Forms.TextBox();
             this.FNamelabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FQtextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.CancelFPWDbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -55,6 +55,7 @@
             this.FNCheckbutton.TabIndex = 7;
             this.FNCheckbutton.Text = "확인";
             this.FNCheckbutton.UseVisualStyleBackColor = true;
+            this.FNCheckbutton.Click += new System.EventHandler(this.FNCheckbutton_Click);
             // 
             // FNametextBox
             // 
@@ -72,12 +73,12 @@
             this.FNamelabel.TabIndex = 5;
             this.FNamelabel.Text = "아이디";
             // 
-            // textBox1
+            // FQtextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 156);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 9;
+            this.FQtextBox.Location = new System.Drawing.Point(123, 156);
+            this.FQtextBox.Name = "FQtextBox";
+            this.FQtextBox.Size = new System.Drawing.Size(100, 21);
+            this.FQtextBox.TabIndex = 9;
             // 
             // label2
             // 
@@ -104,7 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 361);
             this.Controls.Add(this.CancelFPWDbutton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.FQtextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.FNCheckbutton);
             this.Controls.Add(this.FNametextBox);
@@ -126,7 +127,7 @@
         private System.Windows.Forms.Button FNCheckbutton;
         private System.Windows.Forms.TextBox FNametextBox;
         private System.Windows.Forms.Label FNamelabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox FQtextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button CancelFPWDbutton;
     }

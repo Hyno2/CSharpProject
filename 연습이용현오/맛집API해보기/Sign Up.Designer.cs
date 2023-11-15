@@ -101,6 +101,7 @@
             this.PWDtextBox.Name = "PWDtextBox";
             this.PWDtextBox.Size = new System.Drawing.Size(100, 21);
             this.PWDtextBox.TabIndex = 6;
+            this.PWDtextBox.UseSystemPasswordChar = true;
             // 
             // NametextBox
             // 

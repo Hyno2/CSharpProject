@@ -54,6 +54,7 @@
             this.textBox2PWD.Name = "textBox2PWD";
             this.textBox2PWD.Size = new System.Drawing.Size(150, 21);
             this.textBox2PWD.TabIndex = 1;
+            this.textBox2PWD.UseSystemPasswordChar = true;
             // 
             // pictureBox1
             // 
@@ -71,7 +72,6 @@
             this.buttonLogin.TabIndex = 3;
             this.buttonLogin.Text = "로그인";
             this.buttonLogin.UseVisualStyleBackColor = true;
-           
             // 
             // linkLabelPWD
             // 

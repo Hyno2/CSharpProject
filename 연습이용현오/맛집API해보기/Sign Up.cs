@@ -72,10 +72,7 @@ namespace 맛집API해보기
             {
                 ShowMessageBox("오류 발생: " + ex.Message, "오류", MessageBoxIcon.Error);
             }
-            finally
-            {
-                //DBUserHelper.CloseConnection();
-            }
+           
             
         }
 

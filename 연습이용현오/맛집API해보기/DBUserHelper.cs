@@ -28,7 +28,7 @@ namespace 맛집API해보기
                 conn.Open();
         }
 
-        
+
         public static void CloseConnection()
         {
             if (conn.State == ConnectionState.Open)
@@ -109,6 +109,60 @@ namespace 맛집API해보기
             }
         }
 
+        // 아이디 찾기 메소드
+        public static string FindUserIdByName(string name)
+        {
+            // DB 연동
+            ConnectDB();
+            try
+            {
+                
+                // SQL 쿼리
+                string query = $"SELECT User_ID FROM information WHERE User_Name = @UserName";
+
+                // SQL 쿼리 명령 객체 생성
+                using (SqlCommand command = new SqlCommand(query, conn))
+                {
+                    // 매개 변수 추가
+                    command.Parameters.AddWithValue("@UserName", name);
+
+                    // 쿼리 실행 및 결과 반환
+                    object result = command.ExecuteScalar();
+
+                    // 결과가 있으면 해당 아이디 반환, 없으면 null 반환
+                    return result != null ? result.ToString() : null;
+                }
+            }
+            finally { CloseConnection(); }
+           
+        }
+
+        // 비밀번호 찾기 메소드
+        public static string FindUserPWDByQues(string userId, string userQues)
+        {
+            // DB 연동
+            ConnectDB();
+            try
+            {
+                // SQL 쿼리
+                string PWDQuery = $"SELECT User_PassWord FROM information WHERE User_ID = @UserId AND User_Ques = @UserQues";
+
+                // SQL 쿼리 명령 객체 생성
+                using (SqlCommand command = new SqlCommand(PWDQuery, conn))
+                {
+                    command.Parameters.AddWithValue("@UserId", userId);
+                    command.Parameters.AddWithValue("@UserQues", userQues);
+
+                    // 쿼리 실행 및 결과 반환
+                    object result = command.ExecuteScalar();
+
+                    // 결과가 있으면 해당 비밀번호 return 없으면 null 리턴
+                    return result != null ? result.ToString() : null;
+                }
+            }
+            finally { CloseConnection(); }
+
+            }
 
 
     }

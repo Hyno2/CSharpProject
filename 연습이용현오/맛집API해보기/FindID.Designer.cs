@@ -59,6 +59,7 @@
             this.FNCheckbutton.TabIndex = 2;
             this.FNCheckbutton.Text = "확인";
             this.FNCheckbutton.UseVisualStyleBackColor = true;
+            this.FNCheckbutton.Click += new System.EventHandler(this.FNCheckbutton_Click);
             // 
             // label1
             // 
