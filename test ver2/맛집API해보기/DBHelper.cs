@@ -100,7 +100,7 @@ namespace 맛집API해보기
                 dt = ds.Tables[0];  //만약 여러개의 테이블을 불러왔다면 그 중 첫번째꺼 갖고 옴.
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //DataManager.printLog("select");
                 //DataManager.printLog(ex.Message);

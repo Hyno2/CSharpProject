@@ -52,6 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="circle.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DataManager.cs" />
     <Compile Include="DBHelper.cs" />
     <Compile Include="DBUserHelper.cs" />

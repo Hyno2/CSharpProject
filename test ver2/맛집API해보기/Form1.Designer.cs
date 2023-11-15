@@ -28,44 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.donggu_button = new System.Windows.Forms.Button();
+            this.bukgu_button = new System.Windows.Forms.Button();
+            this.dalseonggun_button = new System.Windows.Forms.Button();
+            this.dalseogu_button = new System.Windows.Forms.Button();
+            this.seogu_button = new System.Windows.Forms.Button();
+            this.namgu_button = new System.Windows.Forms.Button();
+            this.suseonggu_button = new System.Windows.Forms.Button();
+            this.dalseonggun_button2 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.junggu_button = new 맛집API해보기.CircularButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 73);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(1005, 520);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "중구",
-            "수성구",
-            "남구",
-            "동구",
-            "서구",
-            "북구",
-            "달서구",
-            "달성군"});
-            this.comboBox1.Location = new System.Drawing.Point(644, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(54, 13);
+            this.button1.Location = new System.Drawing.Point(832, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -75,36 +58,221 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(184, 12);
+            this.button2.Location = new System.Drawing.Point(12, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 23);
+            this.button2.Size = new System.Drawing.Size(119, 36);
             this.button2.TabIndex = 3;
             this.button2.Text = "전체조회 테스트중";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(5, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(853, 625);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // donggu_button
+            // 
+            this.donggu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.donggu_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.donggu_button.FlatAppearance.BorderSize = 0;
+            this.donggu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.donggu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.donggu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.donggu_button.Location = new System.Drawing.Point(655, 79);
+            this.donggu_button.Name = "donggu_button";
+            this.donggu_button.Size = new System.Drawing.Size(99, 165);
+            this.donggu_button.TabIndex = 6;
+            this.donggu_button.Text = "동구";
+            this.donggu_button.UseVisualStyleBackColor = false;
+            // 
+            // bukgu_button
+            // 
+            this.bukgu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bukgu_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bukgu_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bukgu_button.FlatAppearance.BorderSize = 0;
+            this.bukgu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bukgu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bukgu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bukgu_button.Location = new System.Drawing.Point(508, 134);
+            this.bukgu_button.Name = "bukgu_button";
+            this.bukgu_button.Size = new System.Drawing.Size(102, 84);
+            this.bukgu_button.TabIndex = 7;
+            this.bukgu_button.Text = "북구";
+            this.bukgu_button.UseVisualStyleBackColor = false;
+            // 
+            // dalseonggun_button
+            // 
+            this.dalseonggun_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseonggun_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dalseonggun_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseonggun_button.FlatAppearance.BorderSize = 0;
+            this.dalseonggun_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseonggun_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseonggun_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dalseonggun_button.Location = new System.Drawing.Point(334, 212);
+            this.dalseonggun_button.Name = "dalseonggun_button";
+            this.dalseonggun_button.Size = new System.Drawing.Size(68, 61);
+            this.dalseonggun_button.TabIndex = 8;
+            this.dalseonggun_button.Text = "달성군";
+            this.dalseonggun_button.UseVisualStyleBackColor = false;
+            this.dalseonggun_button.Click += new System.EventHandler(this.dalseong_button_Click);
+            // 
+            // dalseogu_button
+            // 
+            this.dalseogu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseogu_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dalseogu_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseogu_button.FlatAppearance.BorderSize = 0;
+            this.dalseogu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseogu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseogu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dalseogu_button.Location = new System.Drawing.Point(454, 287);
+            this.dalseogu_button.Name = "dalseogu_button";
+            this.dalseogu_button.Size = new System.Drawing.Size(73, 46);
+            this.dalseogu_button.TabIndex = 9;
+            this.dalseogu_button.Text = "달서구";
+            this.dalseogu_button.UseVisualStyleBackColor = false;
+            // 
+            // seogu_button
+            // 
+            this.seogu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.seogu_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.seogu_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.seogu_button.FlatAppearance.BorderSize = 0;
+            this.seogu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.seogu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.seogu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.seogu_button.Location = new System.Drawing.Point(502, 237);
+            this.seogu_button.Name = "seogu_button";
+            this.seogu_button.Size = new System.Drawing.Size(39, 30);
+            this.seogu_button.TabIndex = 10;
+            this.seogu_button.Text = "서구";
+            this.seogu_button.UseVisualStyleBackColor = false;
+            // 
+            // namgu_button
+            // 
+            this.namgu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.namgu_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.namgu_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.namgu_button.FlatAppearance.BorderSize = 0;
+            this.namgu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.namgu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.namgu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.namgu_button.Location = new System.Drawing.Point(551, 287);
+            this.namgu_button.Name = "namgu_button";
+            this.namgu_button.Size = new System.Drawing.Size(37, 33);
+            this.namgu_button.TabIndex = 11;
+            this.namgu_button.Text = "남구";
+            this.namgu_button.UseVisualStyleBackColor = false;
+            // 
+            // suseonggu_button
+            // 
+            this.suseonggu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.suseonggu_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.suseonggu_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.suseonggu_button.FlatAppearance.BorderSize = 0;
+            this.suseonggu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.suseonggu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.suseonggu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.suseonggu_button.Location = new System.Drawing.Point(607, 287);
+            this.suseonggu_button.Name = "suseonggu_button";
+            this.suseonggu_button.Size = new System.Drawing.Size(125, 52);
+            this.suseonggu_button.TabIndex = 12;
+            this.suseonggu_button.Text = "수성구";
+            this.suseonggu_button.UseVisualStyleBackColor = false;
+            // 
+            // dalseonggun_button2
+            // 
+            this.dalseonggun_button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseonggun_button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dalseonggun_button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseonggun_button2.FlatAppearance.BorderSize = 0;
+            this.dalseonggun_button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseonggun_button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dalseonggun_button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dalseonggun_button2.Location = new System.Drawing.Point(366, 370);
+            this.dalseonggun_button2.Name = "dalseonggun_button2";
+            this.dalseonggun_button2.Size = new System.Drawing.Size(121, 134);
+            this.dalseonggun_button2.TabIndex = 15;
+            this.dalseonggun_button2.Text = "달성군";
+            this.dalseonggun_button2.UseVisualStyleBackColor = false;
+            this.dalseonggun_button2.Click += new System.EventHandler(this.dalseong_button_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(923, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 46);
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
+            // junggu_button
+            // 
+            this.junggu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.junggu_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.junggu_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.junggu_button.FlatAppearance.BorderSize = 0;
+            this.junggu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.junggu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.junggu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.junggu_button.Location = new System.Drawing.Point(559, 257);
+            this.junggu_button.Name = "junggu_button";
+            this.junggu_button.Size = new System.Drawing.Size(37, 21);
+            this.junggu_button.TabIndex = 14;
+            this.junggu_button.Text = "중구";
+            this.junggu_button.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 605);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1066, 639);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.dalseonggun_button2);
+            this.Controls.Add(this.junggu_button);
+            this.Controls.Add(this.suseonggu_button);
+            this.Controls.Add(this.namgu_button);
+            this.Controls.Add(this.seogu_button);
+            this.Controls.Add(this.dalseogu_button);
+            this.Controls.Add(this.dalseonggun_button);
+            this.Controls.Add(this.bukgu_button);
+            this.Controls.Add(this.donggu_button);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.pictureBox1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button donggu_button;
+        private System.Windows.Forms.Button bukgu_button;
+        private System.Windows.Forms.Button dalseonggun_button;
+        private System.Windows.Forms.Button dalseogu_button;
+        private System.Windows.Forms.Button seogu_button;
+        private System.Windows.Forms.Button namgu_button;
+        private System.Windows.Forms.Button suseonggu_button;
+        private CircularButton junggu_button;
+        private System.Windows.Forms.Button dalseonggun_button2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
