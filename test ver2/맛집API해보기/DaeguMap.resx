@@ -118,24 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="LogOutpictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAs
-        cQAALHEBJXVsGwAAAipJREFUaEPt2btKHGEYxvEVIlYWwUoERdBCg4jEiEg8H/EQolHxkASSwkJBtEiR
-        0s4bsFGbXIKilXdgp5dgaaGNICJG/4+4+CHjLLv7zTcW7wO/Qhdm5nFnnJn3y1gsFovFYsmdRvx88h2L
-        mMccZjGDb5jEV3zBBMYwihEMYRD96EMXyhEsLbjBfQLO8B5Bsoaog/BF316QrCPqAHyZQpC8LPIJDfiA
-        JjRDp99H6LM2tKMDn6FroQe90PWxAnd7qRUp9pxWWXd7ViTfWJFXkqvIJs7xD2X6ha/4LlKL/8huT/8Q
-        sqmHu68DeCvju4iyhCP8ffzpORW4grs/b2WSKBIXPc5cw92nlzKhiyiJlEmjiBJV5hAFl4kr8g5bOMFp
-        Ai7h7lv0zZQi78QVGYf7WSh6lcg7cUX07OR+FkpBN9G4IiX4gz3sJ0A3Rnffsg3tN++kdbH/xh3cfe+g
-        oBJKGkVUwr37S1EllNBFfuHlN1Hw6eQmiSIaSOxi4fGn51TiFu7+vJRQfBepQvZgdfrozTKbGrinlLcS
-        iu8iuR7jl3GMDXgroYQuklisyCt5M0U0FtWjicY73eiE3vI0/tEYSOOgVugi1phI4yKNjTQ+0hhpGu72
-        UiviW7Aiq4g6AF809A6SOlwg6iCKpfcN3QSDRUMBjT21HDAALQ8MQ29xuktr+UDLCBpI6y+s00XLDFpu
-        0LKDlh+0DKHlCL1LaHniB6phsVgsFovFbzKZB78XvQZW/uDvAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlcAAAI+CAYAAACRwC8WAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAe
@@ -1181,7 +1163,4 @@
         /utWAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
-  </metadata>
 </root>

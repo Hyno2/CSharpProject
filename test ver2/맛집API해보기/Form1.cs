@@ -18,13 +18,16 @@ namespace 맛집API해보기
         public Form1()
         {
             InitializeComponent();
+            Side_panel.Height = Home_button.Height;
+            Side_panel.Top = Home_button.Top;
+            groupBox1.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string[] matjips = new string[] {"중구","수성구","남구","동구","서구","북구","달서구","달성군" };
+            string[] matjips = new string[] { "중구", "수성구", "남구", "동구", "서구", "북구", "달서구", "달성군" };
 
-            for(int i = 0; i< matjips.Length; i++)
+            for (int i = 0; i < matjips.Length; i++)
             {
                 using (WebClient wc = new WebClient())
                 {
@@ -49,7 +52,7 @@ namespace 맛집API해보기
                         {
 
                             DBHelper.insertData(jarr[count]["cnt"].ToString(),
-                                jarr[count]["OPENDATA_ID"].ToString(), 
+                                jarr[count]["OPENDATA_ID"].ToString(),
                                 jarr[count]["GNG_CS"].ToString(),
                                 jarr[count]["FD_CS"].ToString(),
                                 jarr[count]["BZ_NM"].ToString(),
@@ -77,7 +80,6 @@ namespace 맛집API해보기
                         // 예외처리: 로깅이나 사용자에게 알림 등을 추가할 수 있음
                     }
                 }
-          
             }
         }
 
@@ -87,12 +89,68 @@ namespace 맛집API해보기
             //dataGridView1.DataSource = DataManager.matJips;
         }
 
-        private void dalseong_button_Click(object sender, EventArgs e)
+        private void Home_button_Click(object sender, EventArgs e)
         {
-
+            Side_panel.Height = Home_button.Height;
+            Side_panel.Top = Home_button.Top;
+            groupBox1.BringToFront();
         }
 
-    }
+        private void MyPlace_button_Click(object sender, EventArgs e)
+        {
+            Side_panel.Height = MyPlace_button.Height;
+            Side_panel.Top = MyPlace_button.Top;
+            myPlace1.BringToFront();
+        }
+
+        private void donggu_button_Click(object sender, EventArgs e)
+        {
+            foodCategory1.BringToFront();
+            DataManager.Load();
+        }
+
+        private void bukgu_button_Click(object sender, EventArgs e)
+        {
+            foodCategory1.BringToFront();
+        }
+
+        private void seogu_button_Click(object sender, EventArgs e)
+        {
+            foodCategory1.BringToFront();
+        }
+
+        private void junggu_button_Click(object sender, EventArgs e)
+        {
+            foodCategory1.BringToFront();
+        }
+
+        private void suseonggu_button_Click(object sender, EventArgs e)
+        {
+            foodCategory1.BringToFront();
+        }
+
+        private void namgu_button_Click(object sender, EventArgs e)
+        {
+            foodCategory1.BringToFront();
+        }
+
+        private void dalseogu_button_Click(object sender, EventArgs e)
+        {
+            foodCategory1.BringToFront();
+        }
+
+        private void dalseonggun_button_Click(object sender, EventArgs e)
+        {
+            foodCategory1.BringToFront();
+        }
+
+        private void LogOutpictureBox_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
+    }  
 }
 
 

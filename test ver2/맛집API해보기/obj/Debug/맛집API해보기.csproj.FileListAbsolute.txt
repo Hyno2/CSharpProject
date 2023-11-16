@@ -126,3 +126,7 @@ C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\bin\Debug\맛
 C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\bin\Debug\Newtonsoft.Json.dll
 C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\bin\Debug\Newtonsoft.Json.xml
 C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\obj\Debug\맛집API해보기.csproj.CopyComplete
+C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\obj\Debug\맛집API해보기.DaeguMap.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\obj\Debug\맛집API해보기.MyPlace.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\obj\Debug\맛집API해보기.FoodCategory.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\obj\Debug\맛집API해보기.MatjipDataForm.resources

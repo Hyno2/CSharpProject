@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,11 +16,11 @@ namespace 맛집API해보기
         {
             Load();
         }
+
         public static void Load()
         {
             try
             {
-
                 DBHelper.selectQuery();
                 matJips.Clear();
                 foreach (DataRow item in DBHelper.dt.Rows)
@@ -33,24 +34,13 @@ namespace 맛집API해보기
                     Matjips.MNU = item["MNU"].ToString();
                     Matjips.SMPL_DESC = item["SMPL_DESC"].ToString();
                     matJips.Add(Matjips);
-
-
                 }
-
-
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
-
             }
-
-
-
         }
-
-
-
     }
 }

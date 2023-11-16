@@ -16,12 +16,9 @@ namespace 맛집API해보기
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Login login = new Login();
-            if(login.ShowDialog() == DialogResult.OK)
-            {
-                Form1 form1 = new Form1();
-                Application.Run(new Form1());
-            }
+            
+                Application.Run(new Login());
+            
             
            
         }

@@ -55,6 +55,12 @@
     <Compile Include="circle.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DaeguMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DaeguMap.Designer.cs">
+      <DependentUpon>DaeguMap.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataManager.cs" />
     <Compile Include="DBHelper.cs" />
     <Compile Include="DBUserHelper.cs" />
@@ -70,6 +76,12 @@
     <Compile Include="FindPWD.Designer.cs">
       <DependentUpon>FindPWD.cs</DependentUpon>
     </Compile>
+    <Compile Include="FoodCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodCategory.Designer.cs">
+      <DependentUpon>FoodCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MatjipDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatjipDataForm.Designer.cs">
+      <DependentUpon>MatjipDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPlace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyPlace.Designer.cs">
+      <DependentUpon>MyPlace.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sign Up.cs">
@@ -91,17 +115,29 @@
     <Compile Include="Sign Up.Designer.cs">
       <DependentUpon>Sign Up.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DaeguMap.resx">
+      <DependentUpon>DaeguMap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FindID.resx">
       <DependentUpon>FindID.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FindPWD.resx">
       <DependentUpon>FindPWD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FoodCategory.resx">
+      <DependentUpon>FoodCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatjipDataForm.resx">
+      <DependentUpon>MatjipDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPlace.resx">
+      <DependentUpon>MyPlace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

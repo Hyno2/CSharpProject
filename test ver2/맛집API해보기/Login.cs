@@ -38,9 +38,10 @@ namespace 맛집API해보기
 
                 if (login)
                 {
-                    this.LoginID = this.textBoxID.Text;
-                    this.DialogResult = DialogResult.OK;
-                    this.Close();
+                    
+                    this.Hide();
+                    Form1 form = new Form1();
+                    form.Show();
                 }
                 else
                 {
@@ -53,11 +54,7 @@ namespace 맛집API해보기
             }
         }
 
-        public string LoginID
-        {
-            get;
-            private set;
-        }
+       
 
         // 아이디 찾기
         private void linkLabelID_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
