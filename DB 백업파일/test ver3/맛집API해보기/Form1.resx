@@ -1222,7 +1222,11 @@
         gg==
 </value>
   </data>
+<<<<<<< HEAD
   <data name="LogOutpictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+=======
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAs
         cQAALHEBJXVsGwAAAipJREFUaEPt2btKHGEYxvEVIlYWwUoERdBCg4jEiEg8H/EQolHxkASSwkJBtEiR

@@ -126,6 +126,7 @@ C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\bin\Debug\맛
 C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\bin\Debug\Newtonsoft.Json.dll
 C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\bin\Debug\Newtonsoft.Json.xml
 C:\Users\xenoi\OneDrive\바탕 화면\test ver2\맛집API해보기\obj\Debug\맛집API해보기.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\USER\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.csproj.AssemblyReference.cache
 C:\Users\USER\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.FindID.resources
 C:\Users\USER\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.FindPWD.resources
@@ -143,3 +144,23 @@ C:\Users\USER\Desktop\test ver2\맛집API해보기\bin\Debug\맛집API해보기.
 C:\Users\USER\Desktop\test ver2\맛집API해보기\bin\Debug\Newtonsoft.Json.dll
 C:\Users\USER\Desktop\test ver2\맛집API해보기\bin\Debug\Newtonsoft.Json.xml
 C:\Users\USER\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.csproj.CopyComplete
+=======
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\bin\Debug\맛집API해보기.exe.config
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\bin\Debug\맛집API해보기.exe
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\bin\Debug\맛집API해보기.pdb
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\bin\Debug\Newtonsoft.Json.dll
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\bin\Debug\Newtonsoft.Json.xml
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.csproj.AssemblyReference.cache
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.FindID.resources
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.FindPWD.resources
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.Form1.resources
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.gu_select.resources
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.Login.resources
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.Properties.Resources.resources
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.Sign_Up.resources
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.csproj.GenerateResource.cache
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.csproj.CoreCompileInputs.cache
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.csproj.CopyComplete
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.exe
+C:\Users\UESR\Desktop\test ver2\맛집API해보기\obj\Debug\맛집API해보기.pdb
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068

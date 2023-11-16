@@ -87,7 +87,11 @@ namespace 맛집API해보기
                 CloseConnection();
             }
         }
+<<<<<<< HEAD
         // 로그인 하는 메소드
+=======
+        // 로그인
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
         public static bool Login(string userId, string password)
         {
             ConnectDB();

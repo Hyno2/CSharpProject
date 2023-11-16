@@ -40,10 +40,18 @@
             this.namgu_button = new System.Windows.Forms.Button();
             this.suseonggu_button = new System.Windows.Forms.Button();
             this.dalseonggun_button2 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.LogOutpictureBox = new System.Windows.Forms.PictureBox();
             this.junggu_button = new 맛집API해보기.CircularButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).BeginInit();
+=======
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.junggu_button = new 맛집API해보기.CircularButton();
+            this.button3 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
             this.SuspendLayout();
             // 
             // button1
@@ -205,6 +213,7 @@
             this.dalseonggun_button2.UseVisualStyleBackColor = false;
             this.dalseonggun_button2.Click += new System.EventHandler(this.dalseong_button_Click);
             // 
+<<<<<<< HEAD
             // LogOutpictureBox
             // 
             this.LogOutpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogOutpictureBox.Image")));
@@ -214,6 +223,16 @@
             this.LogOutpictureBox.TabIndex = 16;
             this.LogOutpictureBox.TabStop = false;
             this.LogOutpictureBox.Click += new System.EventHandler(this.LogOutpictureBox_Click);
+=======
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(923, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(47, 46);
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
             // 
             // junggu_button
             // 
@@ -231,13 +250,31 @@
             this.junggu_button.Text = "중구";
             this.junggu_button.UseVisualStyleBackColor = false;
             // 
+<<<<<<< HEAD
+=======
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(923, 165);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1066, 639);
+<<<<<<< HEAD
             this.Controls.Add(this.LogOutpictureBox);
+=======
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.pictureBox2);
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
             this.Controls.Add(this.dalseonggun_button2);
             this.Controls.Add(this.junggu_button);
             this.Controls.Add(this.suseonggu_button);
@@ -255,7 +292,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
             this.ResumeLayout(false);
 
         }
@@ -273,7 +314,12 @@
         private System.Windows.Forms.Button suseonggu_button;
         private CircularButton junggu_button;
         private System.Windows.Forms.Button dalseonggun_button2;
+<<<<<<< HEAD
         private System.Windows.Forms.PictureBox LogOutpictureBox;
+=======
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button3;
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
     }
 }
 

@@ -92,12 +92,21 @@ namespace 맛집API해보기
 
         }
 
+<<<<<<< HEAD
         // 로그아웃 버튼 클릭시
         private void LogOutpictureBox_Click(object sender, EventArgs e)
         {
             this.Hide();
             Login login = new Login();
             login.Show();
+=======
+        private void button3_Click(object sender, EventArgs e)
+        {
+           new gu_select().ShowDialog();
+           Refresh();
+            
+
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
         }
     }
 }

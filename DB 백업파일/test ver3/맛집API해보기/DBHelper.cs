@@ -114,6 +114,43 @@ namespace 맛집API해보기
         }
         #endregion
 
+<<<<<<< HEAD
+=======
+        #region 각각 조회 셀렉트
+        public static DataTable SelectQ(string keyword)
+        {
+            DataTable dt = new DataTable();
+            // DB 연동
+            ConnectDB();
+            try
+            {
+
+                // SQL 쿼리
+                string query = $"SELECT * FROM RestaurantData WHERE GNG_CS LIKE @keyword";
+
+                // SQL 쿼리 명령 객체 생성
+                using (SqlCommand command = new SqlCommand(query, conn))
+                {
+                    // 매개 변수 추가
+                    command.Parameters.AddWithValue("@keyword", keyword);
+
+                    // SqlDataAdapter를 사용하여 데이터 가져오기
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(dt);
+                }
+
+            }
+            finally { conn.Close(); }
+            return dt;  
+
+        }
+        #endregion
+
+
+       
+
+
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
 
 
 

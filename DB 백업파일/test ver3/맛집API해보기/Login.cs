@@ -21,14 +21,20 @@ namespace 맛집API해보기
             this.buttonCancel.Click += buttonCancel_Click;
         }
 
+<<<<<<< HEAD
         // 취소버튼 눌렀을때
+=======
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
 
+<<<<<<< HEAD
         // 로그인버튼 눌렀을때
+=======
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             try
@@ -40,6 +46,7 @@ namespace 맛집API해보기
 
                 if (login)
                 {
+<<<<<<< HEAD
                     // 현재 폼을 가립니다.
                     this.Hide();
 
@@ -49,6 +56,11 @@ namespace 맛집API해보기
                     form1.Show();
 
 
+=======
+                    this.LoginID = this.textBoxID.Text;
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
                 }
                 else
                 {
@@ -61,11 +73,19 @@ namespace 맛집API해보기
             }
         }
 
+<<<<<<< HEAD
         //public string LoginID
         //{
         //    get;
         //    private set;
         //}
+=======
+        public string LoginID
+        {
+            get;
+            private set;
+        }
+>>>>>>> 47678d6a480fc802fdba62d9edcbe2f8c20ba068
 
         // 아이디 찾기
         private void linkLabelID_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
