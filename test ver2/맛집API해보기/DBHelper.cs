@@ -39,7 +39,7 @@ namespace 맛집API해보기
         {
             try
             {
-                ConnectDB();    //DB 연결
+                ConnectDB();    //DB 연결            
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
                 cmd.CommandText = "select *from " + TABLENAME + "WHERE GNG_CS LIKE '%동구%'"; 

@@ -39,11 +39,13 @@ namespace 맛집API해보기
                 if (login)
                 {
                     
+                    // Login 폼 숨기고
                     Hide();
+                    // Login 폼 텍스트박스 초기화
                     textBoxID.Text = "";
                     textBox2PWD.Text = "";
+                    // 로그인했을때 Form1 다시 띄우기 
                     Form1 form = new Form1();
-                    //form.ShowDialog();
                     form.ShowDialog();
                     Show();
                 }

@@ -14,7 +14,7 @@ namespace 맛집API해보기
 
         static DataManager()
         {
-            Load();
+            
         }
 
         public static void Load()
@@ -26,13 +26,15 @@ namespace 맛집API해보기
                 foreach (DataRow item in DBHelper.dt.Rows)
                 {
                     GoodMatJip Matjips = new GoodMatJip();
-                    Matjips.OPENDATA_ID = item["OPENDATA_ID"].ToString();
-                    Matjips.GNG_CS = item["GNG_CS"].ToString();
-                    Matjips.FD_CS = item["FD_CS"].ToString();
-                    Matjips.BZ_NM = item["BZ_NM"].ToString();
-                    Matjips.MBZ_HR = item["MBZ_HR"].ToString();
-                    Matjips.MNU = item["MNU"].ToString();
-                    Matjips.SMPL_DESC = item["SMPL_DESC"].ToString();
+                  //  Matjips.OPENDATA_ID = item["OPENDATA_ID"].ToString();
+                    Matjips.GNG_CS = item["GNG_CS"].ToString();// 주소
+                  //  Matjips.FD_CS = item["FD_CS"].ToString(); // 카테고리
+                    Matjips.BZ_NM = item["BZ_NM"].ToString(); // 매장명
+                    Matjips.MBZ_HR = item["MBZ_HR"].ToString(); // 영업시간
+                    Matjips.MNU = item["MNU"].ToString(); //메뉴
+                    Matjips.TLNO = item["TLNO"].ToString() ;// 매장 전화번호
+                    Matjips.SMPL_DESC = item["SMPL_DESC"].ToString(); // 매장소개
+                    Matjips.BKN_YN = item["BKN_YN"].ToString(); // 예약가능여부
                     matJips.Add(Matjips);
                 }
             }

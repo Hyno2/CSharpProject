@@ -23,6 +23,7 @@ namespace 맛집API해보기
             groupBox1.BringToFront();
         }
 
+        // DB에 API데이터 넣는 버튼
         private void button1_Click(object sender, EventArgs e)
         {
             string[] matjips = new string[] { "중구", "수성구", "남구", "동구", "서구", "북구", "달서구", "달성군" };
@@ -83,67 +84,71 @@ namespace 맛집API해보기
             }
         }
 
+        // 대구시 맛집 전체 조회 버튼 클릭시
         private void button2_Click(object sender, EventArgs e)
         {
             //dataGridView1.DataSource = null;
             //dataGridView1.DataSource = DataManager.matJips;
         }
-
+        // Home 버튼 클릭시
         private void Home_button_Click(object sender, EventArgs e)
         {
             Side_panel.Height = Home_button.Height;
             Side_panel.Top = Home_button.Top;
             groupBox1.BringToFront();
         }
-
+        // MyPlace 버튼 클릭시
         private void MyPlace_button_Click(object sender, EventArgs e)
         {
             Side_panel.Height = MyPlace_button.Height;
             Side_panel.Top = MyPlace_button.Top;
             myPlace1.BringToFront();
         }
-
+        // 동구 버튼 클릭시
         private void donggu_button_Click(object sender, EventArgs e)
         {
             foodCategory1.BringToFront();
             DataManager.Load();
         }
-
+        // 북구 버튼 클릭시
         private void bukgu_button_Click(object sender, EventArgs e)
         {
             foodCategory1.BringToFront();
         }
-
+        // 서구 버튼 클릭시
         private void seogu_button_Click(object sender, EventArgs e)
         {
             foodCategory1.BringToFront();
         }
-
+        // 중구 버튼 클릭시
         private void junggu_button_Click(object sender, EventArgs e)
         {
             foodCategory1.BringToFront();
         }
-
+        // 수성구 버튼 클릭시
         private void suseonggu_button_Click(object sender, EventArgs e)
         {
             foodCategory1.BringToFront();
         }
-
+        // 남구 버튼 클릭시
         private void namgu_button_Click(object sender, EventArgs e)
         {
             foodCategory1.BringToFront();
         }
 
+        // 달서구 버튼 클릭시
         private void dalseogu_button_Click(object sender, EventArgs e)
         {
             foodCategory1.BringToFront();
         }
 
+        // 달성군 버튼 클릭시
         private void dalseonggun_button_Click(object sender, EventArgs e)
         {
             foodCategory1.BringToFront();
         }
 
+        // 로그아웃 버튼 클릭시
         private void LogOutpictureBox_Click(object sender, EventArgs e)
         {
             Dispose();
