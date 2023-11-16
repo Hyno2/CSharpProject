@@ -20,8 +20,9 @@ namespace 맛집API해보기
         private void MatjipDataForm_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null; // 이전 데이터 지우기
-            dataGridView1.DataSource = DataManager.matJips;
+            dataGridView1.DataSource = DataManager.SelectMatJips;
         }
-       
+
+        
     }
 }

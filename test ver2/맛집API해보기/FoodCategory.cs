@@ -22,8 +22,8 @@ namespace 맛집API해보기
         private void KoreanFood_button_Click(object sender, EventArgs e)
         {
             matjipDataForm.ShowDialog();
-            string buttonText = KoreanFood_button.Text;
             
+
         }
 
         private void JapaneseFood_button_Click(object sender, EventArgs e)

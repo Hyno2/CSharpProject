@@ -55,12 +55,6 @@
     <Compile Include="circle.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DaeguMap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DaeguMap.Designer.cs">
-      <DependentUpon>DaeguMap.cs</DependentUpon>
-    </Compile>
     <Compile Include="DataManager.cs" />
     <Compile Include="DBHelper.cs" />
     <Compile Include="DBUserHelper.cs" />
@@ -115,9 +109,6 @@
     <Compile Include="Sign Up.Designer.cs">
       <DependentUpon>Sign Up.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DaeguMap.resx">
-      <DependentUpon>DaeguMap.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FindID.resx">
       <DependentUpon>FindID.cs</DependentUpon>
     </EmbeddedResource>

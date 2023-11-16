@@ -42,13 +42,9 @@ namespace 맛집API해보기
                 ConnectDB();    //DB 연결            
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "select *from " + TABLENAME + "WHERE GNG_CS LIKE '%동구%'"; 
+                cmd.CommandText = $"select *from {TABLENAME}";
 
-                    //cmd.CommandText = "select *from " + TABLENAME; // "select*from" 이랑  + TABLENAME   띄어쓰기해야함.
-                    // "select *from " + TABLENAME 이렇게 해야함. "select *from" + TABLENAME 이렇게 붙여쓰면 오류
-                    //ex) select *fromTABLENAME 이렇게 sql 쓰여지는 형식이기에 오류가 난다. 
-                    //else
-                    //cmd.CommandText = $"select *from {TABLENAME} + where GNG_CS LIKE '%{cg}%'";
+           
                     da = new SqlDataAdapter(cmd); //쿼리문을 활용하여 데이터 불러오는 것.
                 ds = new DataSet();
                 da.Fill(ds, TABLENAME); //ds 에 테이블을 채워넣음.
@@ -112,37 +108,7 @@ namespace 맛집API해보기
             }
         }
         #endregion
-        #region 각각 조회 셀렉트
        
-        //public static DataTable SelectQ(string keyword)
-        //{
-        //    DataTable dt = new DataTable();
-        //    // DB 연동
-        //    ConnectDB();
-        //    try
-        //    {
-
-        //        // SQL 쿼리
-        //        string query = $"SELECT * FROM RestaurantData WHERE GNG_CS LIKE @keyword";
-
-        //        // SQL 쿼리 명령 객체 생성
-        //        using (SqlCommand command = new SqlCommand(query, conn))
-        //        {
-        //            // 매개 변수 추가
-        //            command.Parameters.AddWithValue("@keyword", keyword);
-
-        //            // SqlDataAdapter를 사용하여 데이터 가져오기
-        //            SqlDataAdapter adapter = new SqlDataAdapter(command);
-        //            adapter.Fill(dt);
-        //        }
-
-        //    }
-        //    finally { conn.Close(); }
-        //    return dt;
-
-        //}
-        #endregion
-
 
        
     }
