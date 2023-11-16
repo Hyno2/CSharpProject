@@ -146,9 +146,7 @@ namespace 맛집API해보기
 
         private void LogOutpictureBox_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Login login = new Login();
-            login.Show();
+            Dispose();
         }
     }  
 }

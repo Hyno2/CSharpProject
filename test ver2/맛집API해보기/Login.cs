@@ -39,9 +39,13 @@ namespace 맛집API해보기
                 if (login)
                 {
                     
-                    this.Hide();
+                    Hide();
+                    textBoxID.Text = "";
+                    textBox2PWD.Text = "";
                     Form1 form = new Form1();
-                    form.Show();
+                    //form.ShowDialog();
+                    form.ShowDialog();
+                    Show();
                 }
                 else
                 {
