@@ -108,8 +108,5 @@ namespace 맛집API해보기
             }
         }
         #endregion
-       
-
-       
     }
 }

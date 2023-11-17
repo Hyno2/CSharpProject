@@ -70,12 +70,6 @@
     <Compile Include="FindPWD.Designer.cs">
       <DependentUpon>FindPWD.cs</DependentUpon>
     </Compile>
-    <Compile Include="FoodCategory.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="FoodCategory.Designer.cs">
-      <DependentUpon>FoodCategory.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,9 +108,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FindPWD.resx">
       <DependentUpon>FindPWD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FoodCategory.resx">
-      <DependentUpon>FoodCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

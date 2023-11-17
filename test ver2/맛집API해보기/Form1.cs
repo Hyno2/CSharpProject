@@ -15,6 +15,7 @@ namespace 맛집API해보기
 {
     public partial class Form1 : Form
     {
+        MatjipDataForm matjipdataform = new MatjipDataForm();
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +23,6 @@ namespace 맛집API해보기
             Side_panel.Top = Home_button.Top;
             groupBox1.BringToFront();
         }
-
         // DB에 API데이터 넣는 버튼
         private void button1_Click(object sender, EventArgs e)
         {
@@ -107,45 +107,52 @@ namespace 맛집API해보기
         // 동구 버튼 클릭시
         private void donggu_button_Click(object sender, EventArgs e)
         {
-            foodCategory1.BringToFront();
-            
+            DataManager.Gu_Load("동구");
+            matjipdataform.ShowDialog();
         }
         // 북구 버튼 클릭시
         private void bukgu_button_Click(object sender, EventArgs e)
         {
-            foodCategory1.BringToFront();
+            DataManager.Gu_Load("북구");
+            matjipdataform.ShowDialog();
         }
         // 서구 버튼 클릭시
         private void seogu_button_Click(object sender, EventArgs e)
         {
-            foodCategory1.BringToFront();
+            DataManager.Gu_Load("서구");
+            matjipdataform.ShowDialog();
         }
         // 중구 버튼 클릭시
         private void junggu_button_Click(object sender, EventArgs e)
         {
-            foodCategory1.BringToFront();
+            DataManager.Gu_Load("중구");
+            matjipdataform.ShowDialog();
         }
         // 수성구 버튼 클릭시
         private void suseonggu_button_Click(object sender, EventArgs e)
         {
-            foodCategory1.BringToFront();
+            DataManager.Gu_Load("수성구");
+            matjipdataform.ShowDialog();
         }
         // 남구 버튼 클릭시
         private void namgu_button_Click(object sender, EventArgs e)
         {
-            foodCategory1.BringToFront();
+            DataManager.Gu_Load("남구");
+            matjipdataform.ShowDialog();
         }
 
         // 달서구 버튼 클릭시
         private void dalseogu_button_Click(object sender, EventArgs e)
         {
-            foodCategory1.BringToFront();
+            DataManager.Gu_Load("달서구");
+            matjipdataform.ShowDialog();
         }
 
         // 달성군 버튼 클릭시
         private void dalseonggun_button_Click(object sender, EventArgs e)
         {
-            foodCategory1.BringToFront();
+            DataManager.Gu_Load("달성군");
+            matjipdataform.ShowDialog();
         }
 
         // 로그아웃 버튼 클릭시

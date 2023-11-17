@@ -37,7 +37,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.MyPlace_button = new System.Windows.Forms.Button();
             this.Home_button = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.Top_panel = new System.Windows.Forms.Panel();
             this.dalseonggun_button2 = new System.Windows.Forms.Button();
             this.suseonggu_button = new System.Windows.Forms.Button();
@@ -50,7 +49,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.junggu_button = new 맛집API해보기.CircularButton();
-            this.foodCategory1 = new 맛집API해보기.FoodCategory();
             this.myPlace1 = new 맛집API해보기.MyPlace();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).BeginInit();
             this.Left_panel.SuspendLayout();
@@ -140,10 +138,6 @@
             this.Home_button.Text = "Home";
             this.Home_button.UseVisualStyleBackColor = true;
             this.Home_button.Click += new System.EventHandler(this.Home_button_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Top_panel
             // 
@@ -335,13 +329,6 @@
             this.junggu_button.UseVisualStyleBackColor = false;
             this.junggu_button.Click += new System.EventHandler(this.junggu_button_Click);
             // 
-            // foodCategory1
-            // 
-            this.foodCategory1.Location = new System.Drawing.Point(275, 54);
-            this.foodCategory1.Name = "foodCategory1";
-            this.foodCategory1.Size = new System.Drawing.Size(791, 580);
-            this.foodCategory1.TabIndex = 20;
-            // 
             // myPlace1
             // 
             this.myPlace1.Location = new System.Drawing.Point(275, 54);
@@ -356,7 +343,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1066, 639);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.foodCategory1);
             this.Controls.Add(this.myPlace1);
             this.Controls.Add(this.Top_panel);
             this.Controls.Add(this.Left_panel);
@@ -384,11 +370,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button MyPlace_button;
         private System.Windows.Forms.Button Home_button;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Panel Side_panel;
         private System.Windows.Forms.Panel Top_panel;
         private MyPlace myPlace1;
-        private FoodCategory foodCategory1;
         private System.Windows.Forms.Button dalseonggun_button2;
         private CircularButton junggu_button;
         private System.Windows.Forms.Button suseonggu_button;
