@@ -61,7 +61,6 @@ namespace 맛집API해보기
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
             }
-
         }
 
         public static void majipLoad()

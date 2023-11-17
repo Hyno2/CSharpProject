@@ -84,12 +84,6 @@ namespace 맛집API해보기
             }
         }
 
-        // 대구시 맛집 전체 조회 버튼 클릭시
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //dataGridView1.DataSource = null;
-            //dataGridView1.DataSource = DataManager.matJips;
-        }
         // Home 버튼 클릭시
         private void Home_button_Click(object sender, EventArgs e)
         {
@@ -160,6 +154,8 @@ namespace 맛집API해보기
         {
             Dispose();
         }
+
+       
     }  
 }
 

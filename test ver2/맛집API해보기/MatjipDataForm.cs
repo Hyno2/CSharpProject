@@ -23,13 +23,13 @@ namespace 맛집API해보기
             //    dataGridView1.DataSource = DataManager.SelectMatJips;
             //}
             dataGridView1.CellClick += dataGridViewCellClick;
-
-
         }
+
         private void MatjipDataForm_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null; // 이전 데이터 지우기
             dataGridView1.DataSource = DataManager.SelectMatJips;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void KoreanFood_button_Click(object sender, EventArgs e)
@@ -37,6 +37,7 @@ namespace 맛집API해보기
             dataGridView1.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("한식");
             dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void ChineseFood_button_Click(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace 맛집API해보기
             dataGridView1.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("중식");
             dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void JapaneseFood_button_Click(object sender, EventArgs e)
@@ -51,6 +53,7 @@ namespace 맛집API해보기
             dataGridView1.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("일식");
             dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void ItalianFood_button_Click(object sender, EventArgs e)
@@ -58,6 +61,7 @@ namespace 맛집API해보기
             dataGridView1.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("양식");
             dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void WorldFood_button_Click(object sender, EventArgs e)
@@ -65,6 +69,7 @@ namespace 맛집API해보기
             dataGridView1.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("세계요리");
             dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void Fusion_button_Click(object sender, EventArgs e)
@@ -72,22 +77,23 @@ namespace 맛집API해보기
             dataGridView1.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("퓨전/뷔페");
             dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void Desert_button_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("디저트/베이커리");
-
             dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void TraditionalTea_button_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("전통차/커피전문점");
-
             dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void SpecialBar_button_Click(object sender, EventArgs e)
@@ -95,8 +101,8 @@ namespace 맛집API해보기
             dataGridView1.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("특별한 술집");
             dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
-
 
         private void dataGridViewCellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -110,11 +116,19 @@ namespace 맛집API해보기
             카테고리.Text = m.FD_CS;
             예약가능여부.Text = m.BKN_YN;
 
+            try
+            {
+                Locale temp = KakaoAPI.SelectMap(m.GNG_CS);
+                object[] pos = new object[] { temp.Lat, temp.Lng };
+                HtmlDocument hdoc = webBrowser1.Document;
+                hdoc.InvokeScript("setCenter", pos);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message+"_"+ex.StackTrace);
+            }
         }
-
-
-
-
 
     }
 }

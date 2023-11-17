@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.LogOutpictureBox = new System.Windows.Forms.PictureBox();
             this.Left_panel = new System.Windows.Forms.Panel();
             this.Side_panel = new System.Windows.Forms.Panel();
@@ -65,16 +64,6 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(673, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 36);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "전체조회 테스트중";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // LogOutpictureBox
             // 
@@ -312,6 +301,7 @@
             this.groupBox1.Size = new System.Drawing.Size(792, 586);
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
+        
             // 
             // junggu_button
             // 
@@ -348,7 +338,6 @@
             this.Controls.Add(this.Top_panel);
             this.Controls.Add(this.Left_panel);
             this.Controls.Add(this.LogOutpictureBox);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Form1";
@@ -365,7 +354,6 @@
 
         #endregion
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox LogOutpictureBox;
         private System.Windows.Forms.Panel Left_panel;
         private System.Windows.Forms.Button button3;
