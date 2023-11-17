@@ -77,7 +77,7 @@ namespace 맛집API해보기
                 Matjips.MBZ_HR = item["MBZ_HR"].ToString(); // 영업시간
                 Matjips.MNU = item["MNU"].ToString().Replace("<br />", " "); //메뉴
                 Matjips.TLNO = item["TLNO"].ToString();// 매장 전화번호
-                Matjips.SMPL_DESC = item["SMPL_DESC"].ToString(); // 매장소개
+                Matjips.SMPL_DESC = item["SMPL_DESC"].ToString().Replace("<br />", " "); // 매장소개
                 Matjips.BKN_YN = item["BKN_YN"].ToString(); // 예약가능여부
                 matJips.Add(Matjips);
             }

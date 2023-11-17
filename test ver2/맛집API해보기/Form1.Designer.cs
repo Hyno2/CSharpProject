@@ -270,6 +270,7 @@
             // 
             this.donggu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.donggu_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.donggu_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
             this.donggu_button.FlatAppearance.BorderSize = 0;
             this.donggu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.donggu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -306,9 +307,9 @@
             this.groupBox1.Controls.Add(this.bukgu_button);
             this.groupBox1.Controls.Add(this.donggu_button);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(331, 54);
+            this.groupBox1.Location = new System.Drawing.Point(273, 54);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(688, 586);
+            this.groupBox1.Size = new System.Drawing.Size(792, 586);
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
             // 
@@ -331,7 +332,7 @@
             // 
             // myPlace1
             // 
-            this.myPlace1.Location = new System.Drawing.Point(275, 54);
+            this.myPlace1.Location = new System.Drawing.Point(274, 60);
             this.myPlace1.Name = "myPlace1";
             this.myPlace1.Size = new System.Drawing.Size(791, 578);
             this.myPlace1.TabIndex = 19;

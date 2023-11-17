@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace 맛집API해보기
 {
@@ -15,6 +17,14 @@ namespace 맛집API해보기
         public MatjipDataForm()
         {
             InitializeComponent();
+            dataGridView1.DataSource = null;
+            //if (DataManager.SelectMatJips.Count > 0)
+            //{
+            //    dataGridView1.DataSource = DataManager.SelectMatJips;
+            //}
+            dataGridView1.CellClick += dataGridViewCellClick;
+
+
         }
         private void MatjipDataForm_Load(object sender, EventArgs e)
         {
@@ -68,7 +78,7 @@ namespace 맛집API해보기
         {
             dataGridView1.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("디저트/베이커리");
-            
+
             dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
         }
 
@@ -87,6 +97,24 @@ namespace 맛집API해보기
             dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
         }
 
-     
+
+        private void dataGridViewCellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            GoodMatJip m = (sender as DataGridView).CurrentRow.DataBoundItem as GoodMatJip;
+            상호명.Text = m.BZ_NM;
+            주소.Text = m.GNG_CS;
+            영업시간.Text = m.MBZ_HR;
+            메뉴.Text = m.MNU;
+            매장설명.Text = m.SMPL_DESC;
+            매장전화번호.Text = m.TLNO;
+            카테고리.Text = m.FD_CS;
+            예약가능여부.Text = m.BKN_YN;
+
+        }
+
+
+
+
+
     }
 }
