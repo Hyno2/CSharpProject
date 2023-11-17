@@ -18,7 +18,7 @@ namespace 맛집API해보기
 
         }
 
-        public static void Load()
+        public static void Load(string GNG_CSvalue, string FD_CSvalue)
         {
             try
             {
@@ -29,7 +29,7 @@ namespace 맛집API해보기
 
                 var mylist = from c in matJips
 
-                             where c.GNG_CS.Contains("수성구")
+                             where c.GNG_CS.Contains(GNG_CSvalue) && c.FD_CS == FD_CSvalue
 
                              select c;
                 foreach (var c in mylist)
@@ -54,7 +54,7 @@ namespace 맛집API해보기
                 GoodMatJip Matjips = new GoodMatJip();
                 //  Matjips.OPENDATA_ID = item["OPENDATA_ID"].ToString();
                 Matjips.GNG_CS = item["GNG_CS"].ToString();// 주소
-                                                           //  Matjips.FD_CS = item["FD_CS"].ToString(); // 카테고리
+                Matjips.FD_CS = item["FD_CS"].ToString(); // 카테고리
                 Matjips.BZ_NM = item["BZ_NM"].ToString(); // 매장명
                 Matjips.MBZ_HR = item["MBZ_HR"].ToString(); // 영업시간
                 Matjips.MNU = item["MNU"].ToString(); //메뉴

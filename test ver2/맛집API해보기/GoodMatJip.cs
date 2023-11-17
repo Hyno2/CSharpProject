@@ -11,7 +11,7 @@ namespace 맛집API해보기
         // public string cnt { get; set; }
       //  public string OPENDATA_ID { get; set; }
         
-        //public string FD_CS { get; set; }// 카테고리
+        public string FD_CS { get; set; }// 카테고리
         public string BZ_NM { get; set; }// 상호명
         public string GNG_CS { get; set; }// 주소
         public string MBZ_HR { get; set; }// 영업시간
@@ -20,11 +20,11 @@ namespace 맛집API해보기
         public string SMPL_DESC { get; set; }// 매장설명
         public string BKN_YN { get; set; }  // 예약가능 여부
 
-        public GoodMatJip( string BZ_NM, string GNG_CS, string MBZ_HR,  string MNU, string TLNO, string SMPL_DESC, string BKN_YN )
+        public GoodMatJip(string FD_CS, string BZ_NM, string GNG_CS, string MBZ_HR,  string MNU, string TLNO, string SMPL_DESC, string BKN_YN )
         {
             //this.cnt = cnt;
             //this.OPENDATA_ID = OPENDATA_ID;
-           // this.FD_CS = FD_CS; // 카테고리
+            this.FD_CS = FD_CS; // 카테고리
             this.BZ_NM = BZ_NM; // 상호명
             this.GNG_CS = GNG_CS; // 주소
             this.MBZ_HR = MBZ_HR; // 영업시간

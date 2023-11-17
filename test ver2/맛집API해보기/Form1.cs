@@ -108,7 +108,7 @@ namespace 맛집API해보기
         private void donggu_button_Click(object sender, EventArgs e)
         {
             foodCategory1.BringToFront();
-            DataManager.Load();
+            
         }
         // 북구 버튼 클릭시
         private void bukgu_button_Click(object sender, EventArgs e)
