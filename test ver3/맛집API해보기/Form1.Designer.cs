@@ -33,7 +33,7 @@
             this.LogOutpictureBox = new System.Windows.Forms.PictureBox();
             this.Left_panel = new System.Windows.Forms.Panel();
             this.Side_panel = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.MatjipStat_button = new System.Windows.Forms.Button();
             this.MyPlace_button = new System.Windows.Forms.Button();
             this.Home_button = new System.Windows.Forms.Button();
             this.Top_panel = new System.Windows.Forms.Panel();
@@ -49,6 +49,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.junggu_button = new 맛집API해보기.CircularButton();
             this.myPlace1 = new 맛집API해보기.MyPlace();
+            this.matjipStat1 = new 맛집API해보기.MatjipStat();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).BeginInit();
             this.Left_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,7 +81,7 @@
             // 
             this.Left_panel.BackColor = System.Drawing.Color.DimGray;
             this.Left_panel.Controls.Add(this.Side_panel);
-            this.Left_panel.Controls.Add(this.button3);
+            this.Left_panel.Controls.Add(this.MatjipStat_button);
             this.Left_panel.Controls.Add(this.MyPlace_button);
             this.Left_panel.Controls.Add(this.Home_button);
             this.Left_panel.Location = new System.Drawing.Point(0, 0);
@@ -96,15 +97,16 @@
             this.Side_panel.Size = new System.Drawing.Size(10, 75);
             this.Side_panel.TabIndex = 19;
             // 
-            // button3
+            // MatjipStat_button
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Location = new System.Drawing.Point(0, 400);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(273, 75);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "대충추가할기능";
-            this.button3.UseVisualStyleBackColor = true;
+            this.MatjipStat_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MatjipStat_button.Location = new System.Drawing.Point(0, 400);
+            this.MatjipStat_button.Name = "MatjipStat_button";
+            this.MatjipStat_button.Size = new System.Drawing.Size(273, 75);
+            this.MatjipStat_button.TabIndex = 2;
+            this.MatjipStat_button.Text = "맛집 데이터 분석";
+            this.MatjipStat_button.UseVisualStyleBackColor = true;
+            this.MatjipStat_button.Click += new System.EventHandler(this.MatjipStat_button_Click);
             // 
             // MyPlace_button
             // 
@@ -326,6 +328,13 @@
             this.myPlace1.Size = new System.Drawing.Size(791, 578);
             this.myPlace1.TabIndex = 19;
             // 
+            // matjipStat1
+            // 
+            this.matjipStat1.Location = new System.Drawing.Point(273, 54);
+            this.matjipStat1.Name = "matjipStat1";
+            this.matjipStat1.Size = new System.Drawing.Size(791, 586);
+            this.matjipStat1.TabIndex = 36;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -338,6 +347,7 @@
             this.Controls.Add(this.Left_panel);
             this.Controls.Add(this.LogOutpictureBox);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.matjipStat1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -355,7 +365,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox LogOutpictureBox;
         private System.Windows.Forms.Panel Left_panel;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button MatjipStat_button;
         private System.Windows.Forms.Button MyPlace_button;
         private System.Windows.Forms.Button Home_button;
         private System.Windows.Forms.Panel Side_panel;
@@ -372,6 +382,7 @@
         private System.Windows.Forms.Button donggu_button;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private MatjipStat matjipStat1;
     }
 }
 

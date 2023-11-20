@@ -155,7 +155,12 @@ namespace 맛집API해보기
             Dispose();
         }
 
-       
+        private void MatjipStat_button_Click(object sender, EventArgs e)
+        {
+            Side_panel.Height = MatjipStat_button.Height;
+            Side_panel.Top = MatjipStat_button.Top;
+            matjipStat1.BringToFront();
+        }
     }  
 }
 
