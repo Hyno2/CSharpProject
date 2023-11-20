@@ -32,8 +32,6 @@ namespace 맛집API해보기
             conn.Open();
 
         }
-
-
         #region 셀렉트쿼리
         public static void selectQuery()
         {
@@ -44,8 +42,8 @@ namespace 맛집API해보기
                 cmd.Connection = conn;
                 cmd.CommandText = $"select *from {TABLENAME}";
 
-           
-                    da = new SqlDataAdapter(cmd); //쿼리문을 활용하여 데이터 불러오는 것.
+
+                da = new SqlDataAdapter(cmd); //쿼리문을 활용하여 데이터 불러오는 것.
                 ds = new DataSet();
                 da.Fill(ds, TABLENAME); //ds 에 테이블을 채워넣음.
                 dt = ds.Tables[0];  //만약 여러개의 테이블을 불러왔다면 그 중 첫번째꺼 갖고 옴.
@@ -53,9 +51,7 @@ namespace 맛집API해보기
             }
             catch (Exception)
             {
-                //DataManager.printLog("select");
-                //DataManager.printLog(ex.Message);
-                //DataManager.printLog(ex.StackTrace);
+
             }
             finally
             {
@@ -98,7 +94,6 @@ namespace 맛집API해보기
             }
             catch (Exception e)
             {
-                //DataManager.printLog(cmd + "," + e.Message + "\n" + e.StackTrace);
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
             }

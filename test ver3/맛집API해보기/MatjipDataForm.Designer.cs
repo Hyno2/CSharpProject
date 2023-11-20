@@ -351,6 +351,7 @@
             this.Controls.Add(this.KoreanFood_button);
             this.Controls.Add(this.dataGridView1);
             this.Name = "MatjipDataForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MatjipDataForm";
             this.Load += new System.EventHandler(this.MatjipDataForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

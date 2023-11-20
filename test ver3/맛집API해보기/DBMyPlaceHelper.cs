@@ -34,28 +34,31 @@ namespace 맛집API해보기
                 conn.Close();
         }
 
-        public static void RegisterMyPlace(string userId, string bz_nm, string fd_cs, string gng_cs)
+        //즐겨찾기 등록
+        public static void RegisterMyPlace(string userId, string bz_nm, string fd_cs, string gng_cs, string tlno)
         {
             try
             {
                 ConnectDB();
-                string insertQuery = $"INSERT INTO MyPlace (User_ID, BZ_NM, FD_CS, GNG_CS) VALUES (@UserId, @bz_nm, @fd_cs, @gng_cs)";
+                string insertQuery = $"INSERT INTO MyPlace (User_ID, BZ_NM, FD_CS, GNG_CS,TLNO) VALUES (@UserId, @bz_nm, @fd_cs, @gng_cs, @tlno)";
                 using (SqlCommand insertCommand = new SqlCommand(insertQuery, conn))
                 {
                     insertCommand.Parameters.AddWithValue("@UserId", userId);
                     insertCommand.Parameters.AddWithValue("@bz_nm", bz_nm);
                     insertCommand.Parameters.AddWithValue("@fd_cs", fd_cs);
                     insertCommand.Parameters.AddWithValue("@gng_cs", gng_cs);
+                    insertCommand.Parameters.AddWithValue("@tlno", tlno);
 
                     insertCommand.ExecuteNonQuery();
                 }
             }
             finally
             {
-                CloseConnection();
+               CloseConnection();
             }
         }
-       
+
+        //현재 로그인된 Id에 데이터 넣기
         public static DataTable GetMyPlaceData(string userId)
         {
             ConnectDB();
@@ -67,8 +70,28 @@ namespace 맛집API해보기
                     SqlDataAdapter adapter = new SqlDataAdapter(selectCommand);
                     DataTable myPlaceData = new DataTable();
                     adapter.Fill(myPlaceData);
-                   
+
                     return myPlaceData;
+                }
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
+
+        //삭제 쿼리
+        public static void DeleteMyPlace(string userId, string bz_nm)
+        {
+            try
+            {
+                ConnectDB();
+                string deleteQuery = $"DELETE FROM MyPlace WHERE User_ID = '{userId}' AND BZ_NM = @bz_nm";
+                using (SqlCommand deleteCommand = new SqlCommand(deleteQuery, conn))
+                {
+                    deleteCommand.Parameters.AddWithValue("@bz_nm", bz_nm);
+                    deleteCommand.ExecuteNonQuery();
+                    MessageBox.Show(bz_nm + "을(를) 즐겨찾기에서 삭제했습니다.");
                 }
             }
             finally

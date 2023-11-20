@@ -91,7 +91,6 @@ namespace 맛집API해보기
             }
         }
     
-
         // 로그인
 
         public static bool Login(string userId, string password)
@@ -125,7 +124,6 @@ namespace 맛집API해보기
         {
             return currentUserId;
         }
-
 
         // 아이디 찾기 메소드
         public static string FindUserIdByName(string name)

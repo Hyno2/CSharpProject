@@ -97,6 +97,7 @@ namespace 맛집API해보기
             Side_panel.Height = MyPlace_button.Height;
             Side_panel.Top = MyPlace_button.Top;
             myPlace1.BringToFront();
+            
         }
         // 동구 버튼 클릭시
         private void donggu_button_Click(object sender, EventArgs e)
@@ -160,6 +161,7 @@ namespace 맛집API해보기
             Side_panel.Height = MatjipStat_button.Height;
             Side_panel.Top = MatjipStat_button.Top;
             matjipStat1.BringToFront();
+
         }
     }  
 }

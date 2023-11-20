@@ -28,39 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.User_label = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Delete_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // User_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(209, 79);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "여기에 즐겨찾기한 장소 띄우기";
+            this.User_label.AutoSize = true;
+            this.User_label.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.User_label.Location = new System.Drawing.Point(52, 70);
+            this.User_label.Name = "User_label";
+            this.User_label.Size = new System.Drawing.Size(0, 24);
+            this.User_label.TabIndex = 0;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 193);
+            this.dataGridView1.Location = new System.Drawing.Point(56, 219);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(534, 335);
+            this.dataGridView1.Size = new System.Drawing.Size(582, 242);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // Delete_button
+            // 
+            this.Delete_button.Location = new System.Drawing.Point(572, 160);
+            this.Delete_button.Name = "Delete_button";
+            this.Delete_button.Size = new System.Drawing.Size(75, 23);
+            this.Delete_button.TabIndex = 2;
+            this.Delete_button.Text = "button1";
+            this.Delete_button.UseVisualStyleBackColor = true;
+            this.Delete_button.Click += new System.EventHandler(this.Delete_button_Click);
             // 
             // MyPlace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Delete_button);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.User_label);
             this.Name = "MyPlace";
             this.Size = new System.Drawing.Size(791, 586);
             this.Load += new System.EventHandler(this.MyPlace_Load);
@@ -72,7 +85,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label User_label;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button Delete_button;
     }
 }

@@ -24,7 +24,6 @@ namespace 맛집API해보기
 
             chart1.Titles.Add("대구 구별 식당 및 맛집 갯수와 카테고리별 맛집 갯수");
             chart1.Titles[0].Font = new Font("Arial", 16, FontStyle.Bold);
-
             chart1.Series[0].Name = "식당 갯수";
             chart1.Series[0].Points.DataBindXY(x, y1);
             chart1.ChartAreas.Add("ChartArea2");
@@ -50,5 +49,6 @@ namespace 맛집API해보기
             chart1.ChartAreas[2].AxisY.MajorGrid.Enabled = false;
 
         }
+
     }
 }
