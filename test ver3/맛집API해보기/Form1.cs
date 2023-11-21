@@ -22,6 +22,10 @@ namespace 맛집API해보기
             Side_panel.Height = Home_button.Height;
             Side_panel.Top = Home_button.Top;
             groupBox1.BringToFront();
+            // 폼에 KeyDown 이벤트 핸들러 등록
+            this.KeyPreview = true;
+            this.KeyDown += FormEvent.CloseFormOnEscKey;
+
         }
         // DB에 API데이터 넣는 버튼
         private void button1_Click(object sender, EventArgs e)
@@ -83,6 +87,8 @@ namespace 맛집API해보기
                 }
             }
         }
+        
+
 
         // Home 버튼 클릭시
         private void Home_button_Click(object sender, EventArgs e)

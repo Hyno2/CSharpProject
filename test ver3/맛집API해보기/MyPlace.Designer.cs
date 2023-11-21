@@ -76,7 +76,7 @@
             this.Controls.Add(this.User_label);
             this.Name = "MyPlace";
             this.Size = new System.Drawing.Size(791, 586);
-            this.Leave += new System.EventHandler(this.MyPlace_Leave);
+  
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

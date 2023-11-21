@@ -40,16 +40,46 @@ namespace 맛집API해보기
             try
             {
                 ConnectDB();
+                // 공백 데이터는 추가가 안되게 
+                if (string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(bz_nm) || string.IsNullOrWhiteSpace(fd_cs) || string.IsNullOrWhiteSpace(gng_cs) || string.IsNullOrWhiteSpace(tlno))
+                {
+                    MessageBox.Show("맛집을 선택해서 추가해주세요.");
+                    return;
+                }
+
+                // 맛집이 이미 존재하는지 확인
+                string checkQuery = $"SELECT COUNT(*) FROM MyPlace WHERE User_ID = @UserId AND BZ_NM = @bz_nm";
+                using (SqlCommand checkCommand = new SqlCommand(checkQuery, conn))
+                {
+                    checkCommand.Parameters.AddWithValue("@UserId", userId);
+                    checkCommand.Parameters.AddWithValue("@bz_nm", bz_nm);
+
+                    int count = Convert.ToInt32(checkCommand.ExecuteScalar());
+
+                    if (count > 0)
+                    {
+                        MessageBox.Show("이미 MyPlace에 동일한 식당이 존재합니다.");
+                        return; // 데이터가 이미 존재하면 메소드를 종료합니다.
+                    }
+                }
+
+                
+                
+
+                // 즐겨찾기 식당 insert
                 string insertQuery = $"INSERT INTO MyPlace (User_ID, BZ_NM, FD_CS, GNG_CS,TLNO) VALUES (@UserId, @bz_nm, @fd_cs, @gng_cs, @tlno)";
                 using (SqlCommand insertCommand = new SqlCommand(insertQuery, conn))
                 {
                     insertCommand.Parameters.AddWithValue("@UserId", userId);
-                    insertCommand.Parameters.AddWithValue("@bz_nm", bz_nm);
+                    insertCommand.Parameters.AddWithValue("@bz_nm", bz_nm); // 상호명
                     insertCommand.Parameters.AddWithValue("@fd_cs", fd_cs);
                     insertCommand.Parameters.AddWithValue("@gng_cs", gng_cs);
                     insertCommand.Parameters.AddWithValue("@tlno", tlno);
 
                     insertCommand.ExecuteNonQuery();
+                    
+                    //Mbox 표시  상호명 
+                    MessageBox.Show(bz_nm + "을(를) 즐겨찾기에 추가하였습니다.");
                 }
             }
             finally
@@ -99,6 +129,8 @@ namespace 맛집API해보기
                 CloseConnection();
             }
         }
+
+
 
     }
 }

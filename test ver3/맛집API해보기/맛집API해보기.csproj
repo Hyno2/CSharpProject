@@ -79,6 +79,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEvent.cs" />
     <Compile Include="GoodMatJip.cs" />
     <Compile Include="KakaoAPI.cs" />
     <Compile Include="Locale.cs" />
