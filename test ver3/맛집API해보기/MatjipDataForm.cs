@@ -21,8 +21,11 @@ namespace 맛집API해보기
             InitializeComponent();
             dataGridView1.DataSource = null;
             dataGridView1.CellClick += dataGridViewCellClick;
-            
-    }
+            // 폼에 KeyDown 이벤트 핸들러 등록
+            this.KeyPreview = true;
+            this.KeyDown += FormEvent.CloseFormOnEscKey;
+
+        }
    
         private void MatjipDataForm_Load(object sender, EventArgs e)
         {
@@ -129,6 +132,7 @@ namespace 맛집API해보기
             }
         }
 
+        // 즐겨찾기버튼 클릭
         private void MyPlace_button_Click(object sender, EventArgs e)
         {
             //현재 로그인한 사용자의 ID를 가져오기
@@ -141,10 +145,15 @@ namespace 맛집API해보기
             string tlno = 매장전화번호.Text;
 
             //MyPlace 등록
-            DBMyPlaceHelper.RegisterMyPlace(userId, 상호명.Text, 카테고리.Text, 주소.Text, 매장전화번호.Text);
+            
+                DBMyPlaceHelper.RegisterMyPlace(userId, 상호명.Text, 카테고리.Text, 주소.Text, 매장전화번호.Text);
+           
+        }
+            
 
-            //Mbox 표시
-            MessageBox.Show(상호명.Text + "을(를) 즐겨찾기에 추가하였습니다.");
+            
+
+          
         }
     }
-}
+

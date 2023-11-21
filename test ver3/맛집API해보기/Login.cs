@@ -19,6 +19,25 @@ namespace 맛집API해보기
             InitializeComponent();
             this.buttonLogin.Click += buttonLogin_Click;
             this.buttonCancel.Click += buttonCancel_Click;
+            this.textBox2PWD.KeyDown += passwordTextBox_KeyDown;
+
+            // 폼에 KeyDown 이벤트 핸들러 등록
+            this.KeyPreview = true;
+            this.KeyDown += FormEvent.CloseFormOnEscKey;
+        }
+
+        // 엔터키 입력시 로그인되는 함수
+        private void passwordTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                // 엔터가 눌렸을때 로그인 수행
+                this.buttonLogin_Click(sender, e);
+                // 이벤트 처리후 이벤트가 더이상 전파되지않도록
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+
+            }
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -87,6 +106,9 @@ namespace 맛집API해보기
             sign_Up.ShowDialog();
 
         }
+        
+     
+        
 
     }
 }

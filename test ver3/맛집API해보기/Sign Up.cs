@@ -13,6 +13,9 @@ namespace 맛집API해보기
         public Sign_Up()
         {
             InitializeComponent();
+            // 폼에 KeyDown 이벤트 핸들러 등록
+            this.KeyPreview = true;
+            this.KeyDown += FormEvent.CloseFormOnEscKey;
         }
 
         private void Cancelbutton_Click(object sender, EventArgs e)

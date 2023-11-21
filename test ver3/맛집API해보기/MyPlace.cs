@@ -69,9 +69,7 @@ namespace 맛집API해보기
             }
         }
 
-        private void MyPlace_Leave(object sender, EventArgs e)
-        {
-        }
+ 
     }
 }
 
