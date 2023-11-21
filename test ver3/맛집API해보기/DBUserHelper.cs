@@ -76,7 +76,6 @@ namespace 맛집API해보기
                     insertCommand.Parameters.AddWithValue("@Password", password);
                     insertCommand.Parameters.AddWithValue("@Username", username);
                     insertCommand.Parameters.AddWithValue("@UserQues", userQues);
-
                     int rowsAffected = insertCommand.ExecuteNonQuery();
 
                     if (rowsAffected <= 0)

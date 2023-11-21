@@ -230,3 +230,23 @@ C:\Users\home\Desktop\CSharpProject\test ver3\맛집API해보기\obj\Debug\맛�
 C:\Users\home\Desktop\CSharpProject\test ver3\맛집API해보기\obj\Debug\맛집API해보기.csproj.CopyComplete
 C:\Users\home\Desktop\CSharpProject\test ver3\맛집API해보기\obj\Debug\맛집API해보기.exe
 C:\Users\home\Desktop\CSharpProject\test ver3\맛집API해보기\obj\Debug\맛집API해보기.pdb
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\bin\Debug\맛집API해보기.exe.config
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\bin\Debug\맛집API해보기.exe
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\bin\Debug\맛집API해보기.pdb
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\bin\Debug\Newtonsoft.Json.dll
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\bin\Debug\Newtonsoft.Json.xml
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.csproj.AssemblyReference.cache
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.FindID.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.FindPWD.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.Form1.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.Login.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.MatjipDataForm.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.MatjipStat.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.MyPlace.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.Properties.Resources.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.Sign_Up.resources
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.csproj.GenerateResource.cache
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.csproj.CoreCompileInputs.cache
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.csproj.CopyComplete
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.exe
+C:\Users\xenoi\OneDrive\바탕 화면\test ver3\맛집API해보기\obj\Debug\맛집API해보기.pdb

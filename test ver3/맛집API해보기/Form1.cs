@@ -97,7 +97,7 @@ namespace 맛집API해보기
             Side_panel.Height = MyPlace_button.Height;
             Side_panel.Top = MyPlace_button.Top;
             myPlace1.BringToFront();
-            
+            myPlace1.BindMyPlaceData();
         }
         // 동구 버튼 클릭시
         private void donggu_button_Click(object sender, EventArgs e)

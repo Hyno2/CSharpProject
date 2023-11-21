@@ -18,28 +18,25 @@ namespace 맛집API해보기
             InitializeComponent();
             User_label.Text = DBUserHelper.GetCurrentUserId() + "님의 Place";
         }
-
-        private void MyPlace_Load(object sender, EventArgs e)
-        {
-            dataGridView1.DataSource = null; // 이전 데이터 지우기
-            BindMyPlaceData(); // MyPlace 테이블을 조회하여 데이터를 DataGridView에 바인딩
-        }
+       
         private void Delete_button_Click(object sender, EventArgs e)
         {
             DeleteSelectedRow();
         }
 
-
         //데이터그리드뷰에 나타내는 메서드
-        private void BindMyPlaceData()
+             
+       public void BindMyPlaceData()
         {
             try
             {
                 // MyPlace 테이블의 데이터 가져오기
                 DataTable myPlaceData = DBMyPlaceHelper.GetMyPlaceData(DBUserHelper.GetCurrentUserId());
-
+                dataGridView1.DataSource = null;
                 // DataGridView에 데이터 바인딩
-                dataGridView1.DataSource = myPlaceData;
+                if(myPlaceData.Rows.Count > 0 )
+                    dataGridView1.DataSource = myPlaceData;
+
                 dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             }
             catch (Exception ex)
@@ -70,6 +67,10 @@ namespace 맛집API해보기
                     MessageBox.Show($"삭제 중 오류가 발생했습니다: {ex.Message}", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void MyPlace_Leave(object sender, EventArgs e)
+        {
         }
     }
 }

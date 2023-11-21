@@ -14,6 +14,8 @@ namespace 맛집API해보기
 {
     public partial class MatjipDataForm : Form
     {
+    
+
         public MatjipDataForm()
         {
             InitializeComponent();
@@ -21,7 +23,7 @@ namespace 맛집API해보기
             dataGridView1.CellClick += dataGridViewCellClick;
             
     }
-
+   
         private void MatjipDataForm_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null; // 이전 데이터 지우기
@@ -140,9 +142,9 @@ namespace 맛집API해보기
 
             //MyPlace 등록
             DBMyPlaceHelper.RegisterMyPlace(userId, 상호명.Text, 카테고리.Text, 주소.Text, 매장전화번호.Text);
+
             //Mbox 표시
             MessageBox.Show(상호명.Text + "을(를) 즐겨찾기에 추가하였습니다.");
         }
-       
     }
 }
