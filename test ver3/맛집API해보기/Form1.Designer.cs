@@ -30,13 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
-            this.LogOutpictureBox = new System.Windows.Forms.PictureBox();
-            this.Left_panel = new System.Windows.Forms.Panel();
-            this.Side_panel = new System.Windows.Forms.Panel();
-            this.MatjipStat_button = new System.Windows.Forms.Button();
-            this.MyPlace_button = new System.Windows.Forms.Button();
-            this.Home_button = new System.Windows.Forms.Button();
-            this.Top_panel = new System.Windows.Forms.Panel();
             this.dalseonggun_button2 = new System.Windows.Forms.Button();
             this.suseonggu_button = new System.Windows.Forms.Button();
             this.namgu_button = new System.Windows.Forms.Button();
@@ -45,98 +38,36 @@
             this.dalseonggun_button = new System.Windows.Forms.Button();
             this.bukgu_button = new System.Windows.Forms.Button();
             this.donggu_button = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.junggu_button = new 맛집API해보기.CircularButton();
-            this.myPlace1 = new 맛집API해보기.MyPlace();
             this.matjipStat1 = new 맛집API해보기.MatjipStat();
-            ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).BeginInit();
-            this.Left_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.myPlace1 = new 맛집API해보기.MyPlace();
+            this.Home_button = new System.Windows.Forms.PictureBox();
+            this.MyPlace_button = new System.Windows.Forms.PictureBox();
+            this.MatjipStat_button = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LogOutpictureBox = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Home_button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyPlace_button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MatjipStat_button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(832, 12);
+            this.button1.Location = new System.Drawing.Point(760, 15);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // LogOutpictureBox
-            // 
-            this.LogOutpictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LogOutpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogOutpictureBox.Image")));
-            this.LogOutpictureBox.Location = new System.Drawing.Point(923, 2);
-            this.LogOutpictureBox.Name = "LogOutpictureBox";
-            this.LogOutpictureBox.Size = new System.Drawing.Size(47, 46);
-            this.LogOutpictureBox.TabIndex = 16;
-            this.LogOutpictureBox.TabStop = false;
-            this.LogOutpictureBox.Click += new System.EventHandler(this.LogOutpictureBox_Click);
-            // 
-            // Left_panel
-            // 
-            this.Left_panel.BackColor = System.Drawing.Color.DimGray;
-            this.Left_panel.Controls.Add(this.Side_panel);
-            this.Left_panel.Controls.Add(this.MatjipStat_button);
-            this.Left_panel.Controls.Add(this.MyPlace_button);
-            this.Left_panel.Controls.Add(this.Home_button);
-            this.Left_panel.Location = new System.Drawing.Point(0, 0);
-            this.Left_panel.Name = "Left_panel";
-            this.Left_panel.Size = new System.Drawing.Size(273, 640);
-            this.Left_panel.TabIndex = 17;
-            // 
-            // Side_panel
-            // 
-            this.Side_panel.BackColor = System.Drawing.Color.IndianRed;
-            this.Side_panel.Location = new System.Drawing.Point(0, 169);
-            this.Side_panel.Name = "Side_panel";
-            this.Side_panel.Size = new System.Drawing.Size(10, 75);
-            this.Side_panel.TabIndex = 19;
-            // 
-            // MatjipStat_button
-            // 
-            this.MatjipStat_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MatjipStat_button.Location = new System.Drawing.Point(0, 400);
-            this.MatjipStat_button.Name = "MatjipStat_button";
-            this.MatjipStat_button.Size = new System.Drawing.Size(273, 75);
-            this.MatjipStat_button.TabIndex = 2;
-            this.MatjipStat_button.Text = "맛집 데이터 분석";
-            this.MatjipStat_button.UseVisualStyleBackColor = true;
-            this.MatjipStat_button.Click += new System.EventHandler(this.MatjipStat_button_Click);
-            // 
-            // MyPlace_button
-            // 
-            this.MyPlace_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MyPlace_button.Location = new System.Drawing.Point(0, 283);
-            this.MyPlace_button.Name = "MyPlace_button";
-            this.MyPlace_button.Size = new System.Drawing.Size(273, 75);
-            this.MyPlace_button.TabIndex = 1;
-            this.MyPlace_button.Text = "MyPlace";
-            this.MyPlace_button.UseVisualStyleBackColor = true;
-            this.MyPlace_button.Click += new System.EventHandler(this.MyPlace_button_Click);
-            // 
-            // Home_button
-            // 
-            this.Home_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Home_button.Location = new System.Drawing.Point(0, 169);
-            this.Home_button.Name = "Home_button";
-            this.Home_button.Size = new System.Drawing.Size(273, 75);
-            this.Home_button.TabIndex = 0;
-            this.Home_button.Text = "Home";
-            this.Home_button.UseVisualStyleBackColor = true;
-            this.Home_button.Click += new System.EventHandler(this.Home_button_Click);
-            // 
-            // Top_panel
-            // 
-            this.Top_panel.BackColor = System.Drawing.Color.DimGray;
-            this.Top_panel.Location = new System.Drawing.Point(270, 0);
-            this.Top_panel.Name = "Top_panel";
-            this.Top_panel.Size = new System.Drawing.Size(796, 10);
-            this.Top_panel.TabIndex = 18;
             // 
             // dalseonggun_button2
             // 
@@ -147,7 +78,7 @@
             this.dalseonggun_button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dalseonggun_button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dalseonggun_button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dalseonggun_button2.Location = new System.Drawing.Point(186, 318);
+            this.dalseonggun_button2.Location = new System.Drawing.Point(157, 318);
             this.dalseonggun_button2.Name = "dalseonggun_button2";
             this.dalseonggun_button2.Size = new System.Drawing.Size(121, 134);
             this.dalseonggun_button2.TabIndex = 34;
@@ -164,7 +95,7 @@
             this.suseonggu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.suseonggu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.suseonggu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.suseonggu_button.Location = new System.Drawing.Point(427, 235);
+            this.suseonggu_button.Location = new System.Drawing.Point(398, 235);
             this.suseonggu_button.Name = "suseonggu_button";
             this.suseonggu_button.Size = new System.Drawing.Size(125, 52);
             this.suseonggu_button.TabIndex = 32;
@@ -181,7 +112,7 @@
             this.namgu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.namgu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.namgu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.namgu_button.Location = new System.Drawing.Point(371, 235);
+            this.namgu_button.Location = new System.Drawing.Point(342, 235);
             this.namgu_button.Name = "namgu_button";
             this.namgu_button.Size = new System.Drawing.Size(37, 33);
             this.namgu_button.TabIndex = 31;
@@ -198,7 +129,7 @@
             this.seogu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.seogu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.seogu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.seogu_button.Location = new System.Drawing.Point(322, 185);
+            this.seogu_button.Location = new System.Drawing.Point(293, 185);
             this.seogu_button.Name = "seogu_button";
             this.seogu_button.Size = new System.Drawing.Size(39, 30);
             this.seogu_button.TabIndex = 30;
@@ -215,7 +146,7 @@
             this.dalseogu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dalseogu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dalseogu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dalseogu_button.Location = new System.Drawing.Point(274, 235);
+            this.dalseogu_button.Location = new System.Drawing.Point(245, 235);
             this.dalseogu_button.Name = "dalseogu_button";
             this.dalseogu_button.Size = new System.Drawing.Size(73, 46);
             this.dalseogu_button.TabIndex = 29;
@@ -232,7 +163,7 @@
             this.dalseonggun_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dalseonggun_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dalseonggun_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dalseonggun_button.Location = new System.Drawing.Point(157, 165);
+            this.dalseonggun_button.Location = new System.Drawing.Point(128, 165);
             this.dalseonggun_button.Name = "dalseonggun_button";
             this.dalseonggun_button.Size = new System.Drawing.Size(68, 61);
             this.dalseonggun_button.TabIndex = 28;
@@ -249,7 +180,7 @@
             this.bukgu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bukgu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bukgu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bukgu_button.Location = new System.Drawing.Point(328, 82);
+            this.bukgu_button.Location = new System.Drawing.Point(299, 82);
             this.bukgu_button.Name = "bukgu_button";
             this.bukgu_button.Size = new System.Drawing.Size(102, 84);
             this.bukgu_button.TabIndex = 27;
@@ -266,23 +197,13 @@
             this.donggu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.donggu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.donggu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.donggu_button.Location = new System.Drawing.Point(475, 27);
+            this.donggu_button.Location = new System.Drawing.Point(446, 27);
             this.donggu_button.Name = "donggu_button";
             this.donggu_button.Size = new System.Drawing.Size(99, 165);
             this.donggu_button.TabIndex = 26;
             this.donggu_button.Text = "동구";
             this.donggu_button.UseVisualStyleBackColor = false;
             this.donggu_button.Click += new System.EventHandler(this.donggu_button_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(49, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(599, 574);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
@@ -298,11 +219,21 @@
             this.groupBox1.Controls.Add(this.bukgu_button);
             this.groupBox1.Controls.Add(this.donggu_button);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(273, 54);
+            this.groupBox1.Location = new System.Drawing.Point(290, 58);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(792, 586);
+            this.groupBox1.Size = new System.Drawing.Size(663, 581);
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Salmon;
+            this.panel1.Controls.Add(this.LogOutpictureBox);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(0, -3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(954, 57);
+            this.panel1.TabIndex = 42;
             // 
             // junggu_button
             // 
@@ -313,7 +244,7 @@
             this.junggu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.junggu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.junggu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.junggu_button.Location = new System.Drawing.Point(379, 205);
+            this.junggu_button.Location = new System.Drawing.Point(350, 205);
             this.junggu_button.Name = "junggu_button";
             this.junggu_button.Size = new System.Drawing.Size(37, 21);
             this.junggu_button.TabIndex = 33;
@@ -321,56 +252,129 @@
             this.junggu_button.UseVisualStyleBackColor = false;
             this.junggu_button.Click += new System.EventHandler(this.junggu_button_Click);
             // 
-            // myPlace1
-            // 
-            this.myPlace1.Location = new System.Drawing.Point(274, 60);
-            this.myPlace1.Name = "myPlace1";
-            this.myPlace1.Size = new System.Drawing.Size(791, 578);
-            this.myPlace1.TabIndex = 19;
-            // 
             // matjipStat1
             // 
-            this.matjipStat1.Location = new System.Drawing.Point(273, 54);
+            this.matjipStat1.Location = new System.Drawing.Point(282, 60);
             this.matjipStat1.Name = "matjipStat1";
-            this.matjipStat1.Size = new System.Drawing.Size(791, 586);
+            this.matjipStat1.Size = new System.Drawing.Size(672, 579);
             this.matjipStat1.TabIndex = 36;
+            // 
+            // myPlace1
+            // 
+            this.myPlace1.Location = new System.Drawing.Point(282, 58);
+            this.myPlace1.Name = "myPlace1";
+            this.myPlace1.Size = new System.Drawing.Size(673, 580);
+            this.myPlace1.TabIndex = 37;
+            // 
+            // Home_button
+            // 
+            this.Home_button.BackColor = System.Drawing.Color.Transparent;
+            this.Home_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Home_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Home_button.Image = global::맛집API해보기.Properties.Resources.home;
+            this.Home_button.Location = new System.Drawing.Point(22, 108);
+            this.Home_button.Name = "Home_button";
+            this.Home_button.Size = new System.Drawing.Size(60, 60);
+            this.Home_button.TabIndex = 41;
+            this.Home_button.TabStop = false;
+            this.Home_button.Click += new System.EventHandler(this.Home_button_Click);
+            // 
+            // MyPlace_button
+            // 
+            this.MyPlace_button.BackColor = System.Drawing.Color.Transparent;
+            this.MyPlace_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MyPlace_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MyPlace_button.Image = global::맛집API해보기.Properties.Resources.sta;
+            this.MyPlace_button.Location = new System.Drawing.Point(118, 108);
+            this.MyPlace_button.Name = "MyPlace_button";
+            this.MyPlace_button.Size = new System.Drawing.Size(60, 60);
+            this.MyPlace_button.TabIndex = 40;
+            this.MyPlace_button.TabStop = false;
+            this.MyPlace_button.Click += new System.EventHandler(this.MyPlace_button_Click);
+            // 
+            // MatjipStat_button
+            // 
+            this.MatjipStat_button.BackColor = System.Drawing.Color.Transparent;
+            this.MatjipStat_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MatjipStat_button.Image = global::맛집API해보기.Properties.Resources.차트;
+            this.MatjipStat_button.Location = new System.Drawing.Point(214, 108);
+            this.MatjipStat_button.Name = "MatjipStat_button";
+            this.MatjipStat_button.Size = new System.Drawing.Size(60, 60);
+            this.MatjipStat_button.TabIndex = 39;
+            this.MatjipStat_button.TabStop = false;
+            this.MatjipStat_button.Click += new System.EventHandler(this.MatjipStat_button_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(20, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(599, 574);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            // 
+            // LogOutpictureBox
+            // 
+            this.LogOutpictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogOutpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogOutpictureBox.Image")));
+            this.LogOutpictureBox.Location = new System.Drawing.Point(890, 3);
+            this.LogOutpictureBox.Name = "LogOutpictureBox";
+            this.LogOutpictureBox.Size = new System.Drawing.Size(50, 50);
+            this.LogOutpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.LogOutpictureBox.TabIndex = 16;
+            this.LogOutpictureBox.TabStop = false;
+            this.LogOutpictureBox.Click += new System.EventHandler(this.LogOutpictureBox_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::맛집API해보기.Properties.Resources.dd;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 201);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(261, 423);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 38;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1066, 639);
+            this.ClientSize = new System.Drawing.Size(954, 636);
+            this.Controls.Add(this.Home_button);
+            this.Controls.Add(this.MyPlace_button);
+            this.Controls.Add(this.MatjipStat_button);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.myPlace1);
-            this.Controls.Add(this.Top_panel);
-            this.Controls.Add(this.Left_panel);
-            this.Controls.Add(this.LogOutpictureBox);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.matjipStat1);
+            this.Controls.Add(this.myPlace1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox2);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.MaximumSize = new System.Drawing.Size(970, 675);
+            this.MinimumSize = new System.Drawing.Size(970, 675);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).EndInit();
-            this.Left_panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Home_button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyPlace_button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MatjipStat_button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox LogOutpictureBox;
-        private System.Windows.Forms.Panel Left_panel;
-        private System.Windows.Forms.Button MatjipStat_button;
-        private System.Windows.Forms.Button MyPlace_button;
-        private System.Windows.Forms.Button Home_button;
-        private System.Windows.Forms.Panel Side_panel;
-        private System.Windows.Forms.Panel Top_panel;
-        private MyPlace myPlace1;
         private System.Windows.Forms.Button dalseonggun_button2;
         private CircularButton junggu_button;
         private System.Windows.Forms.Button suseonggu_button;
@@ -383,6 +387,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private MatjipStat matjipStat1;
+        private MyPlace myPlace1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox MatjipStat_button;
+        private System.Windows.Forms.PictureBox MyPlace_button;
+        private System.Windows.Forms.PictureBox Home_button;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

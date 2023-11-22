@@ -50,7 +50,7 @@
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(56, 219);
+            this.dataGridView1.Location = new System.Drawing.Point(34, 247);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
@@ -59,7 +59,7 @@
             // 
             // Delete_button
             // 
-            this.Delete_button.Location = new System.Drawing.Point(572, 160);
+            this.Delete_button.Location = new System.Drawing.Point(541, 165);
             this.Delete_button.Name = "Delete_button";
             this.Delete_button.Size = new System.Drawing.Size(75, 23);
             this.Delete_button.TabIndex = 2;
@@ -75,8 +75,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.User_label);
             this.Name = "MyPlace";
-            this.Size = new System.Drawing.Size(791, 586);
-  
+            this.Size = new System.Drawing.Size(680, 580);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

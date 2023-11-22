@@ -19,8 +19,7 @@ namespace 맛집API해보기
         public Form1()
         {
             InitializeComponent();
-            Side_panel.Height = Home_button.Height;
-            Side_panel.Top = Home_button.Top;
+          
             groupBox1.BringToFront();
             // 폼에 KeyDown 이벤트 핸들러 등록
             this.KeyPreview = true;
@@ -93,15 +92,11 @@ namespace 맛집API해보기
         // Home 버튼 클릭시
         private void Home_button_Click(object sender, EventArgs e)
         {
-            Side_panel.Height = Home_button.Height;
-            Side_panel.Top = Home_button.Top;
             groupBox1.BringToFront();
         }
         // MyPlace 버튼 클릭시
         private void MyPlace_button_Click(object sender, EventArgs e)
         {
-            Side_panel.Height = MyPlace_button.Height;
-            Side_panel.Top = MyPlace_button.Top;
             myPlace1.BringToFront();
             myPlace1.BindMyPlaceData();
         }
@@ -164,9 +159,12 @@ namespace 맛집API해보기
 
         private void MatjipStat_button_Click(object sender, EventArgs e)
         {
-            Side_panel.Height = MatjipStat_button.Height;
-            Side_panel.Top = MatjipStat_button.Top;
             matjipStat1.BringToFront();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }  
