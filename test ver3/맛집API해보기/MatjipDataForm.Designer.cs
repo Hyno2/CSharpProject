@@ -56,7 +56,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.MyPlace_button = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -74,7 +76,7 @@
             // 
             // KoreanFood_button
             // 
-            this.KoreanFood_button.Location = new System.Drawing.Point(51, 13);
+            this.KoreanFood_button.Location = new System.Drawing.Point(185, 25);
             this.KoreanFood_button.Name = "KoreanFood_button";
             this.KoreanFood_button.Size = new System.Drawing.Size(75, 23);
             this.KoreanFood_button.TabIndex = 1;
@@ -84,7 +86,7 @@
             // 
             // ChineseFood_button
             // 
-            this.ChineseFood_button.Location = new System.Drawing.Point(159, 13);
+            this.ChineseFood_button.Location = new System.Drawing.Point(293, 25);
             this.ChineseFood_button.Name = "ChineseFood_button";
             this.ChineseFood_button.Size = new System.Drawing.Size(75, 23);
             this.ChineseFood_button.TabIndex = 2;
@@ -94,7 +96,7 @@
             // 
             // JapaneseFood_button
             // 
-            this.JapaneseFood_button.Location = new System.Drawing.Point(279, 13);
+            this.JapaneseFood_button.Location = new System.Drawing.Point(413, 25);
             this.JapaneseFood_button.Name = "JapaneseFood_button";
             this.JapaneseFood_button.Size = new System.Drawing.Size(75, 23);
             this.JapaneseFood_button.TabIndex = 3;
@@ -104,7 +106,7 @@
             // 
             // ItalianFood_button
             // 
-            this.ItalianFood_button.Location = new System.Drawing.Point(396, 13);
+            this.ItalianFood_button.Location = new System.Drawing.Point(530, 25);
             this.ItalianFood_button.Name = "ItalianFood_button";
             this.ItalianFood_button.Size = new System.Drawing.Size(75, 23);
             this.ItalianFood_button.TabIndex = 4;
@@ -114,7 +116,7 @@
             // 
             // WorldFood_button
             // 
-            this.WorldFood_button.Location = new System.Drawing.Point(508, 13);
+            this.WorldFood_button.Location = new System.Drawing.Point(642, 25);
             this.WorldFood_button.Name = "WorldFood_button";
             this.WorldFood_button.Size = new System.Drawing.Size(75, 23);
             this.WorldFood_button.TabIndex = 5;
@@ -124,7 +126,7 @@
             // 
             // Fusion_button
             // 
-            this.Fusion_button.Location = new System.Drawing.Point(51, 55);
+            this.Fusion_button.Location = new System.Drawing.Point(185, 67);
             this.Fusion_button.Name = "Fusion_button";
             this.Fusion_button.Size = new System.Drawing.Size(75, 23);
             this.Fusion_button.TabIndex = 6;
@@ -134,7 +136,7 @@
             // 
             // Desert_button
             // 
-            this.Desert_button.Location = new System.Drawing.Point(159, 55);
+            this.Desert_button.Location = new System.Drawing.Point(293, 67);
             this.Desert_button.Name = "Desert_button";
             this.Desert_button.Size = new System.Drawing.Size(88, 23);
             this.Desert_button.TabIndex = 7;
@@ -144,7 +146,7 @@
             // 
             // TraditionalTea_button
             // 
-            this.TraditionalTea_button.Location = new System.Drawing.Point(279, 55);
+            this.TraditionalTea_button.Location = new System.Drawing.Point(413, 67);
             this.TraditionalTea_button.Name = "TraditionalTea_button";
             this.TraditionalTea_button.Size = new System.Drawing.Size(75, 23);
             this.TraditionalTea_button.TabIndex = 8;
@@ -154,7 +156,7 @@
             // 
             // SpecialBar_button
             // 
-            this.SpecialBar_button.Location = new System.Drawing.Point(396, 55);
+            this.SpecialBar_button.Location = new System.Drawing.Point(530, 67);
             this.SpecialBar_button.Name = "SpecialBar_button";
             this.SpecialBar_button.Size = new System.Drawing.Size(75, 23);
             this.SpecialBar_button.TabIndex = 9;
@@ -317,11 +319,22 @@
             this.MyPlace_button.UseVisualStyleBackColor = true;
             this.MyPlace_button.Click += new System.EventHandler(this.MyPlace_button_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::맛집API해보기.Properties.Resources.맛집쓰로고1;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(160, 57);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 28;
+            this.pictureBox3.TabStop = false;
+            // 
             // MatjipDataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 671);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.MyPlace_button);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label8);
@@ -355,6 +368,7 @@
             this.Text = "MatjipDataForm";
             this.Load += new System.EventHandler(this.MatjipDataForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,5 +404,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button MyPlace_button;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

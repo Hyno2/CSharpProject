@@ -39,29 +39,27 @@
             this.bukgu_button = new System.Windows.Forms.Button();
             this.donggu_button = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.junggu_button = new 맛집API해보기.CircularButton();
-            this.matjipStat1 = new 맛집API해보기.MatjipStat();
-            this.myPlace1 = new 맛집API해보기.MyPlace();
+            this.LogOutpictureBox = new System.Windows.Forms.PictureBox();
             this.Home_button = new System.Windows.Forms.PictureBox();
             this.MyPlace_button = new System.Windows.Forms.PictureBox();
             this.MatjipStat_button = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.LogOutpictureBox = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.junggu_button = new 맛집API해보기.CircularButton();
+            this.matjipStat1 = new 맛집API해보기.MatjipStat();
+            this.myPlace1 = new 맛집API해보기.MyPlace();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyPlace_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MatjipStat_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(760, 15);
+            this.button1.Location = new System.Drawing.Point(-4, 614);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -219,21 +217,84 @@
             this.groupBox1.Controls.Add(this.bukgu_button);
             this.groupBox1.Controls.Add(this.donggu_button);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(290, 58);
+            this.groupBox1.Location = new System.Drawing.Point(241, 57);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(663, 581);
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
             // 
-            // panel1
+            // LogOutpictureBox
             // 
-            this.panel1.BackColor = System.Drawing.Color.Salmon;
-            this.panel1.Controls.Add(this.LogOutpictureBox);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(0, -3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(954, 57);
-            this.panel1.TabIndex = 42;
+            this.LogOutpictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogOutpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogOutpictureBox.Image")));
+            this.LogOutpictureBox.Location = new System.Drawing.Point(779, 4);
+            this.LogOutpictureBox.Name = "LogOutpictureBox";
+            this.LogOutpictureBox.Size = new System.Drawing.Size(50, 50);
+            this.LogOutpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.LogOutpictureBox.TabIndex = 16;
+            this.LogOutpictureBox.TabStop = false;
+            this.LogOutpictureBox.Click += new System.EventHandler(this.LogOutpictureBox_Click);
+            // 
+            // Home_button
+            // 
+            this.Home_button.BackColor = System.Drawing.Color.Transparent;
+            this.Home_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Home_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Home_button.Image = global::맛집API해보기.Properties.Resources.첫화면_크리스마스;
+            this.Home_button.Location = new System.Drawing.Point(16, 177);
+            this.Home_button.Name = "Home_button";
+            this.Home_button.Size = new System.Drawing.Size(226, 72);
+            this.Home_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Home_button.TabIndex = 41;
+            this.Home_button.TabStop = false;
+            this.Home_button.Click += new System.EventHandler(this.Home_button_Click);
+            // 
+            // MyPlace_button
+            // 
+            this.MyPlace_button.BackColor = System.Drawing.Color.Transparent;
+            this.MyPlace_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MyPlace_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MyPlace_button.Image = global::맛집API해보기.Properties.Resources.즐겨찾기1;
+            this.MyPlace_button.Location = new System.Drawing.Point(7, 264);
+            this.MyPlace_button.Name = "MyPlace_button";
+            this.MyPlace_button.Size = new System.Drawing.Size(232, 91);
+            this.MyPlace_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MyPlace_button.TabIndex = 40;
+            this.MyPlace_button.TabStop = false;
+            this.MyPlace_button.Click += new System.EventHandler(this.MyPlace_button_Click);
+            // 
+            // MatjipStat_button
+            // 
+            this.MatjipStat_button.BackColor = System.Drawing.Color.Transparent;
+            this.MatjipStat_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MatjipStat_button.Image = global::맛집API해보기.Properties.Resources.촤알트3;
+            this.MatjipStat_button.Location = new System.Drawing.Point(11, 375);
+            this.MatjipStat_button.Name = "MatjipStat_button";
+            this.MatjipStat_button.Size = new System.Drawing.Size(234, 77);
+            this.MatjipStat_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MatjipStat_button.TabIndex = 39;
+            this.MatjipStat_button.TabStop = false;
+            this.MatjipStat_button.Click += new System.EventHandler(this.MatjipStat_button_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(20, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(599, 574);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::맛집API해보기.Properties.Resources.크리스마스띠;
+            this.pictureBox2.Location = new System.Drawing.Point(-4, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(958, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 42;
+            this.pictureBox2.TabStop = false;
             // 
             // junggu_button
             // 
@@ -254,101 +315,32 @@
             // 
             // matjipStat1
             // 
-            this.matjipStat1.Location = new System.Drawing.Point(282, 60);
+            this.matjipStat1.Location = new System.Drawing.Point(233, 59);
             this.matjipStat1.Name = "matjipStat1";
             this.matjipStat1.Size = new System.Drawing.Size(672, 579);
             this.matjipStat1.TabIndex = 36;
             // 
             // myPlace1
             // 
-            this.myPlace1.Location = new System.Drawing.Point(282, 58);
+            this.myPlace1.Location = new System.Drawing.Point(233, 57);
             this.myPlace1.Name = "myPlace1";
             this.myPlace1.Size = new System.Drawing.Size(673, 580);
             this.myPlace1.TabIndex = 37;
-            // 
-            // Home_button
-            // 
-            this.Home_button.BackColor = System.Drawing.Color.Transparent;
-            this.Home_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Home_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Home_button.Image = global::맛집API해보기.Properties.Resources.home;
-            this.Home_button.Location = new System.Drawing.Point(22, 108);
-            this.Home_button.Name = "Home_button";
-            this.Home_button.Size = new System.Drawing.Size(60, 60);
-            this.Home_button.TabIndex = 41;
-            this.Home_button.TabStop = false;
-            this.Home_button.Click += new System.EventHandler(this.Home_button_Click);
-            // 
-            // MyPlace_button
-            // 
-            this.MyPlace_button.BackColor = System.Drawing.Color.Transparent;
-            this.MyPlace_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MyPlace_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MyPlace_button.Image = global::맛집API해보기.Properties.Resources.sta;
-            this.MyPlace_button.Location = new System.Drawing.Point(118, 108);
-            this.MyPlace_button.Name = "MyPlace_button";
-            this.MyPlace_button.Size = new System.Drawing.Size(60, 60);
-            this.MyPlace_button.TabIndex = 40;
-            this.MyPlace_button.TabStop = false;
-            this.MyPlace_button.Click += new System.EventHandler(this.MyPlace_button_Click);
-            // 
-            // MatjipStat_button
-            // 
-            this.MatjipStat_button.BackColor = System.Drawing.Color.Transparent;
-            this.MatjipStat_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MatjipStat_button.Image = global::맛집API해보기.Properties.Resources.차트;
-            this.MatjipStat_button.Location = new System.Drawing.Point(214, 108);
-            this.MatjipStat_button.Name = "MatjipStat_button";
-            this.MatjipStat_button.Size = new System.Drawing.Size(60, 60);
-            this.MatjipStat_button.TabIndex = 39;
-            this.MatjipStat_button.TabStop = false;
-            this.MatjipStat_button.Click += new System.EventHandler(this.MatjipStat_button_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(20, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(599, 574);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
-            // LogOutpictureBox
-            // 
-            this.LogOutpictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LogOutpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogOutpictureBox.Image")));
-            this.LogOutpictureBox.Location = new System.Drawing.Point(890, 3);
-            this.LogOutpictureBox.Name = "LogOutpictureBox";
-            this.LogOutpictureBox.Size = new System.Drawing.Size(50, 50);
-            this.LogOutpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.LogOutpictureBox.TabIndex = 16;
-            this.LogOutpictureBox.TabStop = false;
-            this.LogOutpictureBox.Click += new System.EventHandler(this.LogOutpictureBox_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::맛집API해보기.Properties.Resources.dd;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 201);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(261, 423);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 38;
-            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(954, 636);
+            this.Controls.Add(this.LogOutpictureBox);
             this.Controls.Add(this.Home_button);
             this.Controls.Add(this.MyPlace_button);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.MatjipStat_button);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.matjipStat1);
             this.Controls.Add(this.myPlace1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.MaximumSize = new System.Drawing.Size(970, 675);
@@ -359,13 +351,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyPlace_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MatjipStat_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -388,11 +378,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private MatjipStat matjipStat1;
         private MyPlace myPlace1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox MatjipStat_button;
         private System.Windows.Forms.PictureBox MyPlace_button;
         private System.Windows.Forms.PictureBox Home_button;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

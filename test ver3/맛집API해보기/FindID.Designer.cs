@@ -33,12 +33,14 @@
             this.FNCheckbutton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.CancelFIDbutton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // FNamelabel
             // 
             this.FNamelabel.AutoSize = true;
-            this.FNamelabel.Location = new System.Drawing.Point(59, 141);
+            this.FNamelabel.Location = new System.Drawing.Point(78, 120);
             this.FNamelabel.Name = "FNamelabel";
             this.FNamelabel.Size = new System.Drawing.Size(29, 12);
             this.FNamelabel.TabIndex = 0;
@@ -46,14 +48,14 @@
             // 
             // FNametextBox
             // 
-            this.FNametextBox.Location = new System.Drawing.Point(94, 138);
+            this.FNametextBox.Location = new System.Drawing.Point(113, 117);
             this.FNametextBox.Name = "FNametextBox";
             this.FNametextBox.Size = new System.Drawing.Size(100, 21);
             this.FNametextBox.TabIndex = 1;
             // 
             // FNCheckbutton
             // 
-            this.FNCheckbutton.Location = new System.Drawing.Point(116, 236);
+            this.FNCheckbutton.Location = new System.Drawing.Point(113, 186);
             this.FNCheckbutton.Name = "FNCheckbutton";
             this.FNCheckbutton.Size = new System.Drawing.Size(75, 23);
             this.FNCheckbutton.TabIndex = 2;
@@ -65,7 +67,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(65, 38);
+            this.label1.Location = new System.Drawing.Point(74, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 24);
             this.label1.TabIndex = 3;
@@ -73,13 +75,22 @@
             // 
             // CancelFIDbutton
             // 
-            this.CancelFIDbutton.Location = new System.Drawing.Point(197, 236);
+            this.CancelFIDbutton.Location = new System.Drawing.Point(197, 186);
             this.CancelFIDbutton.Name = "CancelFIDbutton";
             this.CancelFIDbutton.Size = new System.Drawing.Size(75, 23);
             this.CancelFIDbutton.TabIndex = 11;
             this.CancelFIDbutton.Text = "취소";
             this.CancelFIDbutton.UseVisualStyleBackColor = true;
             this.CancelFIDbutton.Click += new System.EventHandler(this.CancelFIDbutton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::맛집API해보기.Properties.Resources.ID찾기;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 190);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(207, 184);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // FindID
             // 
@@ -91,11 +102,13 @@
             this.Controls.Add(this.FNCheckbutton);
             this.Controls.Add(this.FNametextBox);
             this.Controls.Add(this.FNamelabel);
+            this.Controls.Add(this.pictureBox1);
             this.MaximumSize = new System.Drawing.Size(300, 400);
             this.MinimumSize = new System.Drawing.Size(300, 400);
             this.Name = "FindID";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FindID";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,5 +121,6 @@
         private System.Windows.Forms.Button FNCheckbutton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button CancelFIDbutton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

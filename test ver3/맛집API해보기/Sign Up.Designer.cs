@@ -40,13 +40,15 @@
             this.DCheckbutton = new System.Windows.Forms.Button();
             this.Checkbutton = new System.Windows.Forms.Button();
             this.Cancelbutton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(197, 42);
+            this.label1.Location = new System.Drawing.Point(162, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 24);
             this.label1.TabIndex = 0;
@@ -64,7 +66,7 @@
             // PWDlabel
             // 
             this.PWDlabel.AutoSize = true;
-            this.PWDlabel.Location = new System.Drawing.Point(84, 216);
+            this.PWDlabel.Location = new System.Drawing.Point(85, 182);
             this.PWDlabel.Name = "PWDlabel";
             this.PWDlabel.Size = new System.Drawing.Size(53, 12);
             this.PWDlabel.TabIndex = 2;
@@ -73,7 +75,7 @@
             // Namelabel
             // 
             this.Namelabel.AutoSize = true;
-            this.Namelabel.Location = new System.Drawing.Point(102, 291);
+            this.Namelabel.Location = new System.Drawing.Point(102, 235);
             this.Namelabel.Name = "Namelabel";
             this.Namelabel.Size = new System.Drawing.Size(29, 12);
             this.Namelabel.TabIndex = 3;
@@ -82,11 +84,11 @@
             // Queslabel
             // 
             this.Queslabel.AutoSize = true;
-            this.Queslabel.Location = new System.Drawing.Point(24, 357);
+            this.Queslabel.Location = new System.Drawing.Point(24, 282);
             this.Queslabel.Name = "Queslabel";
-            this.Queslabel.Size = new System.Drawing.Size(119, 12);
+            this.Queslabel.Size = new System.Drawing.Size(127, 12);
             this.Queslabel.TabIndex = 4;
-            this.Queslabel.Text = "가장좋아하는여행지?";
+            this.Queslabel.Text = "가장 좋아하는 여행지?";
             // 
             // IDtextBox
             // 
@@ -97,7 +99,7 @@
             // 
             // PWDtextBox
             // 
-            this.PWDtextBox.Location = new System.Drawing.Point(169, 216);
+            this.PWDtextBox.Location = new System.Drawing.Point(170, 179);
             this.PWDtextBox.Name = "PWDtextBox";
             this.PWDtextBox.Size = new System.Drawing.Size(100, 21);
             this.PWDtextBox.TabIndex = 6;
@@ -105,21 +107,21 @@
             // 
             // NametextBox
             // 
-            this.NametextBox.Location = new System.Drawing.Point(169, 282);
+            this.NametextBox.Location = new System.Drawing.Point(169, 229);
             this.NametextBox.Name = "NametextBox";
             this.NametextBox.Size = new System.Drawing.Size(100, 21);
             this.NametextBox.TabIndex = 7;
             // 
             // QuestextBox
             // 
-            this.QuestextBox.Location = new System.Drawing.Point(169, 354);
+            this.QuestextBox.Location = new System.Drawing.Point(169, 275);
             this.QuestextBox.Name = "QuestextBox";
             this.QuestextBox.Size = new System.Drawing.Size(100, 21);
             this.QuestextBox.TabIndex = 8;
             // 
             // DCheckbutton
             // 
-            this.DCheckbutton.Location = new System.Drawing.Point(285, 138);
+            this.DCheckbutton.Location = new System.Drawing.Point(285, 134);
             this.DCheckbutton.Name = "DCheckbutton";
             this.DCheckbutton.Size = new System.Drawing.Size(75, 23);
             this.DCheckbutton.TabIndex = 9;
@@ -129,7 +131,7 @@
             // 
             // Checkbutton
             // 
-            this.Checkbutton.Location = new System.Drawing.Point(254, 423);
+            this.Checkbutton.Location = new System.Drawing.Point(252, 351);
             this.Checkbutton.Name = "Checkbutton";
             this.Checkbutton.Size = new System.Drawing.Size(75, 23);
             this.Checkbutton.TabIndex = 10;
@@ -139,13 +141,23 @@
             // 
             // Cancelbutton
             // 
-            this.Cancelbutton.Location = new System.Drawing.Point(335, 423);
+            this.Cancelbutton.Location = new System.Drawing.Point(336, 351);
             this.Cancelbutton.Name = "Cancelbutton";
             this.Cancelbutton.Size = new System.Drawing.Size(75, 23);
             this.Cancelbutton.TabIndex = 11;
             this.Cancelbutton.Text = "취소";
             this.Cancelbutton.UseVisualStyleBackColor = true;
             this.Cancelbutton.Click += new System.EventHandler(this.Cancelbutton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::맛집API해보기.Properties.Resources.칭구칭긔;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 323);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(437, 369);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // Sign_Up
             // 
@@ -164,11 +176,13 @@
             this.Controls.Add(this.PWDlabel);
             this.Controls.Add(this.IDlabel);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.MaximumSize = new System.Drawing.Size(450, 700);
             this.MinimumSize = new System.Drawing.Size(450, 700);
             this.Name = "Sign_Up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign_Up";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +202,6 @@
         private System.Windows.Forms.Button DCheckbutton;
         private System.Windows.Forms.Button Checkbutton;
         private System.Windows.Forms.Button Cancelbutton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -94,7 +94,7 @@ namespace 맛집API해보기
             ConnectDB();
             try
             {
-                string selectQuery = $"SELECT * FROM MyPlace where User_ID = '{userId}'";
+                string selectQuery = $"SELECT BZ_NM, FD_CS, GNG_CS, TLNO FROM MyPlace where User_ID = '{userId}'";
                 using (SqlCommand selectCommand = new SqlCommand(selectQuery, conn))
                 {
                     SqlDataAdapter adapter = new SqlDataAdapter(selectCommand);

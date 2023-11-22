@@ -37,6 +37,7 @@
             // 
             // chart1
             // 
+            this.chart1.BackColor = System.Drawing.SystemColors.Control;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
