@@ -229,5 +229,47 @@
   <ItemGroup>
     <None Include="Resources\크리스마스띠.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\제목을-입력해주세요_-001 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\쌓인눈.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\눈사람.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\즐겨찾기2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\삭제.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\즐겨찾기3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-001 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\리스 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dd1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\제목을-입력해주세요_-001 %281%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsBuffer.bmp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\제목을 입력해주세요_-002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\제목을 입력해주세요_-0021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsBuffer.bmp1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

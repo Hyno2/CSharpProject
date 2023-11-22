@@ -31,16 +31,18 @@
             this.User_label = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Delete_button = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // User_label
             // 
             this.User_label.AutoSize = true;
-            this.User_label.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.User_label.Location = new System.Drawing.Point(52, 70);
+            this.User_label.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold);
+            this.User_label.Location = new System.Drawing.Point(45, 73);
             this.User_label.Name = "User_label";
-            this.User_label.Size = new System.Drawing.Size(0, 24);
+            this.User_label.Size = new System.Drawing.Size(0, 40);
             this.User_label.TabIndex = 0;
             // 
             // dataGridView1
@@ -50,7 +52,7 @@
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 247);
+            this.dataGridView1.Location = new System.Drawing.Point(34, 296);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
@@ -59,24 +61,44 @@
             // 
             // Delete_button
             // 
-            this.Delete_button.Location = new System.Drawing.Point(541, 165);
+            this.Delete_button.BackColor = System.Drawing.Color.White;
+            this.Delete_button.BackgroundImage = global::맛집API해보기.Properties.Resources.제목을_입력해주세요__002;
+            this.Delete_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Delete_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Delete_button.FlatAppearance.BorderSize = 0;
+            this.Delete_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Delete_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Delete_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_button.Location = new System.Drawing.Point(559, 224);
             this.Delete_button.Name = "Delete_button";
-            this.Delete_button.Size = new System.Drawing.Size(75, 23);
+            this.Delete_button.Size = new System.Drawing.Size(57, 53);
             this.Delete_button.TabIndex = 2;
-            this.Delete_button.Text = "button1";
-            this.Delete_button.UseVisualStyleBackColor = true;
+            this.Delete_button.UseVisualStyleBackColor = false;
             this.Delete_button.Click += new System.EventHandler(this.Delete_button_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::맛집API해보기.Properties.Resources.dsBuffer_bmp;
+            this.pictureBox1.Location = new System.Drawing.Point(34, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(582, 233);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // MyPlace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.Delete_button);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.User_label);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "MyPlace";
             this.Size = new System.Drawing.Size(680, 580);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,5 +109,6 @@
         private System.Windows.Forms.Label User_label;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button Delete_button;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -16,7 +16,7 @@ namespace 맛집API해보기
         public MyPlace()
         {
             InitializeComponent();
-            User_label.Text = DBUserHelper.GetCurrentUserId() + "님의 Place";
+            User_label.Text = DBUserHelper.GetCurrentUserId() + "님의 즐겨찾기";
         }
        
         private void Delete_button_Click(object sender, EventArgs e)

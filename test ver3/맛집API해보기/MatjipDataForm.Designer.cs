@@ -55,8 +55,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.MyPlace_button = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.MyPlace_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -71,7 +71,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.ShowCellErrors = false;
-            this.dataGridView1.Size = new System.Drawing.Size(707, 499);
+            this.dataGridView1.Size = new System.Drawing.Size(678, 481);
             this.dataGridView1.TabIndex = 0;
             // 
             // KoreanFood_button
@@ -140,7 +140,7 @@
             this.Desert_button.Name = "Desert_button";
             this.Desert_button.Size = new System.Drawing.Size(88, 23);
             this.Desert_button.TabIndex = 7;
-            this.Desert_button.Text = "디저트/베이커리";
+            this.Desert_button.Text = "디저트";
             this.Desert_button.UseVisualStyleBackColor = true;
             this.Desert_button.Click += new System.EventHandler(this.Desert_button_Click);
             // 
@@ -166,56 +166,56 @@
             // 
             // 상호명
             // 
-            this.상호명.Location = new System.Drawing.Point(829, 57);
+            this.상호명.Location = new System.Drawing.Point(821, 57);
             this.상호명.Name = "상호명";
             this.상호명.Size = new System.Drawing.Size(324, 21);
             this.상호명.TabIndex = 10;
             // 
             // 주소
             // 
-            this.주소.Location = new System.Drawing.Point(829, 95);
+            this.주소.Location = new System.Drawing.Point(821, 95);
             this.주소.Name = "주소";
             this.주소.Size = new System.Drawing.Size(324, 21);
             this.주소.TabIndex = 11;
             // 
             // 카테고리
             // 
-            this.카테고리.Location = new System.Drawing.Point(829, 133);
+            this.카테고리.Location = new System.Drawing.Point(821, 133);
             this.카테고리.Name = "카테고리";
             this.카테고리.Size = new System.Drawing.Size(324, 21);
             this.카테고리.TabIndex = 12;
             // 
             // 예약가능여부
             // 
-            this.예약가능여부.Location = new System.Drawing.Point(829, 209);
+            this.예약가능여부.Location = new System.Drawing.Point(821, 209);
             this.예약가능여부.Name = "예약가능여부";
             this.예약가능여부.Size = new System.Drawing.Size(324, 21);
             this.예약가능여부.TabIndex = 13;
             // 
             // 영업시간
             // 
-            this.영업시간.Location = new System.Drawing.Point(829, 171);
+            this.영업시간.Location = new System.Drawing.Point(821, 171);
             this.영업시간.Name = "영업시간";
             this.영업시간.Size = new System.Drawing.Size(324, 21);
             this.영업시간.TabIndex = 14;
             // 
             // 매장설명
             // 
-            this.매장설명.Location = new System.Drawing.Point(829, 247);
+            this.매장설명.Location = new System.Drawing.Point(821, 247);
             this.매장설명.Name = "매장설명";
             this.매장설명.Size = new System.Drawing.Size(324, 21);
             this.매장설명.TabIndex = 15;
             // 
             // 매장전화번호
             // 
-            this.매장전화번호.Location = new System.Drawing.Point(829, 285);
+            this.매장전화번호.Location = new System.Drawing.Point(821, 285);
             this.매장전화번호.Name = "매장전화번호";
             this.매장전화번호.Size = new System.Drawing.Size(324, 21);
             this.매장전화번호.TabIndex = 16;
             // 
             // 메뉴
             // 
-            this.메뉴.Location = new System.Drawing.Point(829, 323);
+            this.메뉴.Location = new System.Drawing.Point(821, 323);
             this.메뉴.Name = "메뉴";
             this.메뉴.Size = new System.Drawing.Size(324, 21);
             this.메뉴.TabIndex = 17;
@@ -224,7 +224,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(764, 60);
+            this.label1.Location = new System.Drawing.Point(756, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 16);
             this.label1.TabIndex = 18;
@@ -234,7 +234,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(770, 98);
+            this.label2.Location = new System.Drawing.Point(762, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 16);
             this.label2.TabIndex = 19;
@@ -244,7 +244,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(770, 136);
+            this.label3.Location = new System.Drawing.Point(762, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 16);
             this.label3.TabIndex = 20;
@@ -254,7 +254,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(758, 174);
+            this.label4.Location = new System.Drawing.Point(750, 174);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 16);
             this.label4.TabIndex = 21;
@@ -264,7 +264,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(746, 212);
+            this.label5.Location = new System.Drawing.Point(738, 212);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 16);
             this.label5.TabIndex = 22;
@@ -274,7 +274,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(758, 250);
+            this.label6.Location = new System.Drawing.Point(750, 250);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 16);
             this.label6.TabIndex = 23;
@@ -284,7 +284,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label7.Location = new System.Drawing.Point(758, 288);
+            this.label7.Location = new System.Drawing.Point(750, 288);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(51, 16);
             this.label7.TabIndex = 24;
@@ -294,7 +294,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8.Location = new System.Drawing.Point(770, 326);
+            this.label8.Location = new System.Drawing.Point(762, 326);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(29, 16);
             this.label8.TabIndex = 25;
@@ -302,22 +302,12 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(879, 377);
+            this.webBrowser1.Location = new System.Drawing.Point(801, 359);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(250, 250);
+            this.webBrowser1.Size = new System.Drawing.Size(344, 250);
             this.webBrowser1.TabIndex = 26;
             this.webBrowser1.Url = new System.Uri("https://hyojeongchoe.github.io/glowing-octo-happiness/mymap.html", System.UriKind.Absolute);
-            // 
-            // MyPlace_button
-            // 
-            this.MyPlace_button.Location = new System.Drawing.Point(749, 413);
-            this.MyPlace_button.Name = "MyPlace_button";
-            this.MyPlace_button.Size = new System.Drawing.Size(75, 23);
-            this.MyPlace_button.TabIndex = 27;
-            this.MyPlace_button.Text = "button1";
-            this.MyPlace_button.UseVisualStyleBackColor = true;
-            this.MyPlace_button.Click += new System.EventHandler(this.MyPlace_button_Click);
             // 
             // pictureBox3
             // 
@@ -329,11 +319,29 @@
             this.pictureBox3.TabIndex = 28;
             this.pictureBox3.TabStop = false;
             // 
+            // MyPlace_button
+            // 
+            this.MyPlace_button.BackColor = System.Drawing.Color.Transparent;
+            this.MyPlace_button.BackgroundImage = global::맛집API해보기.Properties.Resources.즐겨찾기3;
+            this.MyPlace_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MyPlace_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.MyPlace_button.FlatAppearance.BorderSize = 0;
+            this.MyPlace_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.MyPlace_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.MyPlace_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MyPlace_button.Location = new System.Drawing.Point(728, 359);
+            this.MyPlace_button.Name = "MyPlace_button";
+            this.MyPlace_button.Size = new System.Drawing.Size(52, 48);
+            this.MyPlace_button.TabIndex = 27;
+            this.MyPlace_button.UseVisualStyleBackColor = false;
+            this.MyPlace_button.Click += new System.EventHandler(this.MyPlace_button_Click);
+            // 
             // MatjipDataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 671);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1161, 638);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.MyPlace_button);
             this.Controls.Add(this.webBrowser1);
@@ -363,6 +371,8 @@
             this.Controls.Add(this.ChineseFood_button);
             this.Controls.Add(this.KoreanFood_button);
             this.Controls.Add(this.dataGridView1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoubleBuffered = true;
             this.Name = "MatjipDataForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MatjipDataForm";
