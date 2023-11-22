@@ -103,6 +103,7 @@ namespace 맛집API해보기
         // 동구 버튼 클릭시
         private void donggu_button_Click(object sender, EventArgs e)
         {
+            
             DataManager.Gu_Load("동구");
             matjipdataform.ShowDialog();
         }
@@ -163,10 +164,6 @@ namespace 맛집API해보기
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }  
 }
 

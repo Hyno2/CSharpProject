@@ -32,12 +32,11 @@ namespace 맛집API해보기
             {
                 // MyPlace 테이블의 데이터 가져오기
                 DataTable myPlaceData = DBMyPlaceHelper.GetMyPlaceData(DBUserHelper.GetCurrentUserId());
-                dataGridView1.DataSource = null;
+                MyPlace_dataGridView.DataSource = null;
                 // DataGridView에 데이터 바인딩
                 if(myPlaceData.Rows.Count > 0 )
-                    dataGridView1.DataSource = myPlaceData;
-
-                dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                    MyPlace_dataGridView.DataSource = myPlaceData;
+                MyPlace_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             }
             catch (Exception ex)
             {
@@ -48,19 +47,19 @@ namespace 맛집API해보기
         //삭제하는 메서드
         private void DeleteSelectedRow()
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (MyPlace_dataGridView.SelectedRows.Count > 0)
             {
-                int selectedIndex = dataGridView1.SelectedRows[0].Index;
+                int selectedIndex = MyPlace_dataGridView.SelectedRows[0].Index;
                 string userId = DBUserHelper.GetCurrentUserId();
 
                 try
                 {
                     // 해당 행을 데이터베이스에서도 삭제
-                    string bz_nm = dataGridView1.SelectedRows[0].Cells["BZ_NM"].Value.ToString(); // BZ_NM에 해당하는 셀의 값을 가져옴
+                    string bz_nm = MyPlace_dataGridView.SelectedRows[0].Cells["BZ_NM"].Value.ToString(); // BZ_NM에 해당하는 셀의 값을 가져옴
                     DBMyPlaceHelper.DeleteMyPlace(userId, bz_nm); // 데이터베이스에서 삭제하는 메소드 호출
 
                     // DataGridView에서 선택된 행 삭제
-                    dataGridView1.Rows.RemoveAt(selectedIndex);
+                    MyPlace_dataGridView.Rows.RemoveAt(selectedIndex);
                 }
                 catch (Exception ex)
                 {

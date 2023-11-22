@@ -31,44 +31,45 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.Matjip_chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.Matjip_chart)).BeginInit();
             this.SuspendLayout();
             // 
-            // chart1
+            // Matjip_chart
             // 
-            this.chart1.BackColor = System.Drawing.SystemColors.Control;
+            this.Matjip_chart.BackColor = System.Drawing.SystemColors.Control;
+            chartArea1.BackColor = System.Drawing.SystemColors.Control;
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.BackColor = System.Drawing.SystemColors.Window;
+            this.Matjip_chart.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.SystemColors.Control;
             legend1.InterlacedRowsColor = System.Drawing.Color.White;
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(1, 2);
-            this.chart1.Name = "chart1";
+            this.Matjip_chart.Legends.Add(legend1);
+            this.Matjip_chart.Location = new System.Drawing.Point(1, 2);
+            this.Matjip_chart.Name = "Matjip_chart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(680, 580);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
+            this.Matjip_chart.Series.Add(series1);
+            this.Matjip_chart.Size = new System.Drawing.Size(680, 580);
+            this.Matjip_chart.TabIndex = 0;
+            this.Matjip_chart.Text = "chart1";
             // 
             // MatjipStat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.Matjip_chart);
             this.Name = "MatjipStat";
             this.Size = new System.Drawing.Size(680, 580);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Matjip_chart)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart Matjip_chart;
     }
 }

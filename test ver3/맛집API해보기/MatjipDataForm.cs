@@ -19,8 +19,8 @@ namespace 맛집API해보기
         public MatjipDataForm()
         {
             InitializeComponent();
-            dataGridView1.DataSource = null;
-            dataGridView1.CellClick += dataGridViewCellClick;
+            Matjip_dataGridView.DataSource = null;
+            Matjip_dataGridView.CellClick += dataGridViewCellClick;
             // 폼에 KeyDown 이벤트 핸들러 등록
             this.KeyPreview = true;
             this.KeyDown += FormEvent.CloseFormOnEscKey;
@@ -29,81 +29,81 @@ namespace 맛집API해보기
    
         private void MatjipDataForm_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null; // 이전 데이터 지우기
-            dataGridView1.DataSource = DataManager.SelectMatJips;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Matjip_dataGridView.DataSource = null; // 이전 데이터 지우기
+            Matjip_dataGridView.DataSource = DataManager.SelectMatJips;
+            Matjip_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void KoreanFood_button_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null; // 이전 데이터 지우기
+            Matjip_dataGridView.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("한식");
-            dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Matjip_dataGridView.DataSource = DataManager.SelectCategoryMatJips;
+            Matjip_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void ChineseFood_button_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null; // 이전 데이터 지우기
+            Matjip_dataGridView.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("중식");
-            dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Matjip_dataGridView.DataSource = DataManager.SelectCategoryMatJips;
+            Matjip_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void JapaneseFood_button_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null; // 이전 데이터 지우기
+            Matjip_dataGridView.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("일식");
-            dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Matjip_dataGridView.DataSource = DataManager.SelectCategoryMatJips;
+            Matjip_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void ItalianFood_button_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null; // 이전 데이터 지우기
+            Matjip_dataGridView.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("양식");
-            dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Matjip_dataGridView.DataSource = DataManager.SelectCategoryMatJips;
+            Matjip_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void WorldFood_button_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null; // 이전 데이터 지우기
+            Matjip_dataGridView.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("세계요리");
-            dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Matjip_dataGridView.DataSource = DataManager.SelectCategoryMatJips;
+            Matjip_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void Fusion_button_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null; // 이전 데이터 지우기
+            Matjip_dataGridView.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("퓨전/뷔페");
-            dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Matjip_dataGridView.DataSource = DataManager.SelectCategoryMatJips;
+            Matjip_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void Desert_button_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null; // 이전 데이터 지우기
+            Matjip_dataGridView.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("디저트/베이커리");
-            dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Matjip_dataGridView.DataSource = DataManager.SelectCategoryMatJips;
+            Matjip_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void TraditionalTea_button_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null; // 이전 데이터 지우기
+            Matjip_dataGridView.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("전통차/커피전문점");
-            dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Matjip_dataGridView.DataSource = DataManager.SelectCategoryMatJips;
+            Matjip_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void SpecialBar_button_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null; // 이전 데이터 지우기
+            Matjip_dataGridView.DataSource = null; // 이전 데이터 지우기
             DataManager.Cg_Load("특별한 술집");
-            dataGridView1.DataSource = DataManager.SelectCategoryMatJips;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Matjip_dataGridView.DataSource = DataManager.SelectCategoryMatJips;
+            Matjip_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void dataGridViewCellClick(object sender, DataGridViewCellEventArgs e)

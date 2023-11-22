@@ -28,36 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyPlace));
             this.User_label = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MyPlace_dataGridView = new System.Windows.Forms.DataGridView();
             this.Delete_button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyPlace_dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // User_label
             // 
             this.User_label.AutoSize = true;
+            this.User_label.BackColor = System.Drawing.Color.White;
             this.User_label.Font = new System.Drawing.Font("굴림", 30F, System.Drawing.FontStyle.Bold);
             this.User_label.Location = new System.Drawing.Point(45, 73);
             this.User_label.Name = "User_label";
             this.User_label.Size = new System.Drawing.Size(0, 40);
             this.User_label.TabIndex = 0;
             // 
-            // dataGridView1
+            // MyPlace_dataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 296);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(582, 242);
-            this.dataGridView1.TabIndex = 1;
+            this.MyPlace_dataGridView.AllowUserToAddRows = false;
+            this.MyPlace_dataGridView.AllowUserToDeleteRows = false;
+            this.MyPlace_dataGridView.AllowUserToOrderColumns = true;
+            this.MyPlace_dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.MyPlace_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MyPlace_dataGridView.Location = new System.Drawing.Point(34, 296);
+            this.MyPlace_dataGridView.Name = "MyPlace_dataGridView";
+            this.MyPlace_dataGridView.ReadOnly = true;
+            this.MyPlace_dataGridView.RowTemplate.Height = 23;
+            this.MyPlace_dataGridView.Size = new System.Drawing.Size(582, 242);
+            this.MyPlace_dataGridView.TabIndex = 1;
             // 
             // Delete_button
             // 
@@ -69,7 +71,7 @@
             this.Delete_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Delete_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Delete_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_button.Location = new System.Drawing.Point(559, 224);
+            this.Delete_button.Location = new System.Drawing.Point(535, 208);
             this.Delete_button.Name = "Delete_button";
             this.Delete_button.Size = new System.Drawing.Size(57, 53);
             this.Delete_button.TabIndex = 2;
@@ -78,7 +80,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::맛집API해보기.Properties.Resources.dsBuffer_bmp;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(34, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(582, 233);
@@ -92,12 +94,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.Delete_button);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.MyPlace_dataGridView);
             this.Controls.Add(this.User_label);
             this.Controls.Add(this.pictureBox1);
             this.Name = "MyPlace";
             this.Size = new System.Drawing.Size(680, 580);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyPlace_dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -107,7 +109,7 @@
         #endregion
 
         private System.Windows.Forms.Label User_label;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView MyPlace_dataGridView;
         private System.Windows.Forms.Button Delete_button;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

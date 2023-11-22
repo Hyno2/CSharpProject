@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Matjip_dataGridView = new System.Windows.Forms.DataGridView();
             this.KoreanFood_button = new System.Windows.Forms.Button();
             this.ChineseFood_button = new System.Windows.Forms.Button();
             this.JapaneseFood_button = new System.Windows.Forms.Button();
@@ -57,25 +57,26 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.MyPlace_button = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Matjip_dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // Matjip_dataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 128);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.ShowCellErrors = false;
-            this.dataGridView1.Size = new System.Drawing.Size(678, 481);
-            this.dataGridView1.TabIndex = 0;
+            this.Matjip_dataGridView.AllowUserToAddRows = false;
+            this.Matjip_dataGridView.AllowUserToDeleteRows = false;
+            this.Matjip_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Matjip_dataGridView.Location = new System.Drawing.Point(26, 128);
+            this.Matjip_dataGridView.Name = "Matjip_dataGridView";
+            this.Matjip_dataGridView.ReadOnly = true;
+            this.Matjip_dataGridView.RowTemplate.Height = 23;
+            this.Matjip_dataGridView.ShowCellErrors = false;
+            this.Matjip_dataGridView.Size = new System.Drawing.Size(678, 481);
+            this.Matjip_dataGridView.TabIndex = 0;
             // 
             // KoreanFood_button
             // 
+            this.KoreanFood_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.KoreanFood_button.Location = new System.Drawing.Point(185, 25);
             this.KoreanFood_button.Name = "KoreanFood_button";
             this.KoreanFood_button.Size = new System.Drawing.Size(75, 23);
@@ -86,6 +87,7 @@
             // 
             // ChineseFood_button
             // 
+            this.ChineseFood_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ChineseFood_button.Location = new System.Drawing.Point(293, 25);
             this.ChineseFood_button.Name = "ChineseFood_button";
             this.ChineseFood_button.Size = new System.Drawing.Size(75, 23);
@@ -96,6 +98,7 @@
             // 
             // JapaneseFood_button
             // 
+            this.JapaneseFood_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.JapaneseFood_button.Location = new System.Drawing.Point(413, 25);
             this.JapaneseFood_button.Name = "JapaneseFood_button";
             this.JapaneseFood_button.Size = new System.Drawing.Size(75, 23);
@@ -106,6 +109,7 @@
             // 
             // ItalianFood_button
             // 
+            this.ItalianFood_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ItalianFood_button.Location = new System.Drawing.Point(530, 25);
             this.ItalianFood_button.Name = "ItalianFood_button";
             this.ItalianFood_button.Size = new System.Drawing.Size(75, 23);
@@ -116,6 +120,7 @@
             // 
             // WorldFood_button
             // 
+            this.WorldFood_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.WorldFood_button.Location = new System.Drawing.Point(642, 25);
             this.WorldFood_button.Name = "WorldFood_button";
             this.WorldFood_button.Size = new System.Drawing.Size(75, 23);
@@ -126,6 +131,7 @@
             // 
             // Fusion_button
             // 
+            this.Fusion_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Fusion_button.Location = new System.Drawing.Point(185, 67);
             this.Fusion_button.Name = "Fusion_button";
             this.Fusion_button.Size = new System.Drawing.Size(75, 23);
@@ -136,6 +142,7 @@
             // 
             // Desert_button
             // 
+            this.Desert_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Desert_button.Location = new System.Drawing.Point(293, 67);
             this.Desert_button.Name = "Desert_button";
             this.Desert_button.Size = new System.Drawing.Size(88, 23);
@@ -146,6 +153,7 @@
             // 
             // TraditionalTea_button
             // 
+            this.TraditionalTea_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TraditionalTea_button.Location = new System.Drawing.Point(413, 67);
             this.TraditionalTea_button.Name = "TraditionalTea_button";
             this.TraditionalTea_button.Size = new System.Drawing.Size(75, 23);
@@ -156,6 +164,7 @@
             // 
             // SpecialBar_button
             // 
+            this.SpecialBar_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SpecialBar_button.Location = new System.Drawing.Point(530, 67);
             this.SpecialBar_button.Name = "SpecialBar_button";
             this.SpecialBar_button.Size = new System.Drawing.Size(75, 23);
@@ -324,6 +333,7 @@
             this.MyPlace_button.BackColor = System.Drawing.Color.Transparent;
             this.MyPlace_button.BackgroundImage = global::맛집API해보기.Properties.Resources.즐겨찾기3;
             this.MyPlace_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MyPlace_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MyPlace_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.MyPlace_button.FlatAppearance.BorderSize = 0;
             this.MyPlace_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -370,14 +380,14 @@
             this.Controls.Add(this.JapaneseFood_button);
             this.Controls.Add(this.ChineseFood_button);
             this.Controls.Add(this.KoreanFood_button);
-            this.Controls.Add(this.dataGridView1);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Controls.Add(this.Matjip_dataGridView);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
             this.Name = "MatjipDataForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MatjipDataForm";
             this.Load += new System.EventHandler(this.MatjipDataForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Matjip_dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -386,7 +396,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Matjip_dataGridView;
         private System.Windows.Forms.Button KoreanFood_button;
         private System.Windows.Forms.Button ChineseFood_button;
         private System.Windows.Forms.Button JapaneseFood_button;

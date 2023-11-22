@@ -36,24 +36,24 @@
             this.dalseogu_button = new System.Windows.Forms.Button();
             this.dalseonggun_button = new System.Windows.Forms.Button();
             this.bukgu_button = new System.Windows.Forms.Button();
-            this.donggu_button = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.junggu_button = new 맛집API해보기.CircularButton();
+            this.donggu_button = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LogOutpictureBox = new System.Windows.Forms.PictureBox();
             this.Home_button = new System.Windows.Forms.PictureBox();
             this.MyPlace_button = new System.Windows.Forms.PictureBox();
             this.MatjipStat_button = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.junggu_button = new 맛집API해보기.CircularButton();
             this.matjipStat1 = new 맛집API해보기.MatjipStat();
             this.myPlace1 = new 맛집API해보기.MyPlace();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyPlace_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MatjipStat_button)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -177,23 +177,6 @@
             this.bukgu_button.UseVisualStyleBackColor = false;
             this.bukgu_button.Click += new System.EventHandler(this.bukgu_button_Click);
             // 
-            // donggu_button
-            // 
-            this.donggu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.donggu_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.donggu_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.donggu_button.FlatAppearance.BorderSize = 0;
-            this.donggu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.donggu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.donggu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.donggu_button.Location = new System.Drawing.Point(446, 27);
-            this.donggu_button.Name = "donggu_button";
-            this.donggu_button.Size = new System.Drawing.Size(99, 165);
-            this.donggu_button.TabIndex = 26;
-            this.donggu_button.Text = "동구";
-            this.donggu_button.UseVisualStyleBackColor = false;
-            this.donggu_button.Click += new System.EventHandler(this.donggu_button_Click);
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
@@ -212,6 +195,51 @@
             this.groupBox1.Size = new System.Drawing.Size(680, 580);
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
+            // 
+            // junggu_button
+            // 
+            this.junggu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.junggu_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.junggu_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.junggu_button.FlatAppearance.BorderSize = 0;
+            this.junggu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.junggu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.junggu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.junggu_button.Location = new System.Drawing.Point(350, 205);
+            this.junggu_button.Name = "junggu_button";
+            this.junggu_button.Size = new System.Drawing.Size(37, 21);
+            this.junggu_button.TabIndex = 33;
+            this.junggu_button.Text = "중구";
+            this.junggu_button.UseVisualStyleBackColor = false;
+            this.junggu_button.Click += new System.EventHandler(this.junggu_button_Click);
+            // 
+            // donggu_button
+            // 
+            this.donggu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.donggu_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.donggu_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.donggu_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.donggu_button.FlatAppearance.BorderSize = 0;
+            this.donggu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.donggu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.donggu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.donggu_button.Location = new System.Drawing.Point(431, 39);
+            this.donggu_button.Name = "donggu_button";
+            this.donggu_button.Size = new System.Drawing.Size(125, 154);
+            this.donggu_button.TabIndex = 26;
+            this.donggu_button.Text = "동구";
+            this.donggu_button.UseVisualStyleBackColor = false;
+            this.donggu_button.Click += new System.EventHandler(this.donggu_button_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(20, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(599, 574);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
             // 
             // LogOutpictureBox
             // 
@@ -268,16 +296,6 @@
             this.MatjipStat_button.TabStop = false;
             this.MatjipStat_button.Click += new System.EventHandler(this.MatjipStat_button_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(20, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(599, 574);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::맛집API해보기.Properties.Resources.크리스마스띠;
@@ -297,23 +315,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 43;
             this.pictureBox3.TabStop = false;
-            // 
-            // junggu_button
-            // 
-            this.junggu_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.junggu_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.junggu_button.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.junggu_button.FlatAppearance.BorderSize = 0;
-            this.junggu_button.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.junggu_button.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.junggu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.junggu_button.Location = new System.Drawing.Point(350, 205);
-            this.junggu_button.Name = "junggu_button";
-            this.junggu_button.Size = new System.Drawing.Size(37, 21);
-            this.junggu_button.TabIndex = 33;
-            this.junggu_button.Text = "중구";
-            this.junggu_button.UseVisualStyleBackColor = false;
-            this.junggu_button.Click += new System.EventHandler(this.junggu_button_Click);
             // 
             // matjipStat1
             // 
@@ -354,14 +355,13 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogOutpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyPlace_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MatjipStat_button)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
@@ -379,7 +379,6 @@
         private System.Windows.Forms.Button dalseogu_button;
         private System.Windows.Forms.Button dalseonggun_button;
         private System.Windows.Forms.Button bukgu_button;
-        private System.Windows.Forms.Button donggu_button;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private MatjipStat matjipStat1;
@@ -389,6 +388,7 @@
         private System.Windows.Forms.PictureBox Home_button;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button donggu_button;
     }
 }
 

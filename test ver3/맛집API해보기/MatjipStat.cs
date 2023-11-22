@@ -22,31 +22,36 @@ namespace 맛집API해보기
             List<string> x1 = new List<string> { "한식", "중식", "일식", "양식", "세계요리", "퓨전/뷔페", "디저트/베이커리", "전통차", "특별한술집" };
             List<double> y3 = new List<double> { 715, 33, 44, 43, 30, 10, 58, 24, 7 };
 
-            chart1.Titles.Add("대구 구별 식당 및 맛집 갯수와 카테고리별 맛집 갯수");
-            chart1.Titles[0].Font = new Font("Arial", 16, FontStyle.Bold);
-            chart1.Series[0].Name = "식당 갯수";
-            chart1.Series[0].Points.DataBindXY(x, y1);
-            chart1.ChartAreas.Add("ChartArea2");
-            chart1.Series.Add("맛집 갯수");
-            chart1.Series[1].ChartArea = "ChartArea2";
-            chart1.Series[1].Points.DataBindXY(x, y2);
-            chart1.ChartAreas.Add("ChartArea3");
-            chart1.Series.Add("카테고리 별 맛집 갯수");
-            chart1.Series[2].ChartArea = "ChartArea3";
-            chart1.Series[2].Points.DataBindXY(x1, y3);
+            Matjip_chart.Titles.Add("대구 구별 식당 및 맛집 갯수와 카테고리별 맛집 갯수");
+            Matjip_chart.Titles[0].Font = new Font("Arial", 16, FontStyle.Bold);
+            Matjip_chart.Series[0].Name = "식당 갯수";
+            Matjip_chart.ChartAreas[0].BackColor = SystemColors.Control;
+            Matjip_chart.Series[0].Points.DataBindXY(x, y1);
+            
+            Matjip_chart.ChartAreas.Add("ChartArea2");
+            Matjip_chart.Series.Add("맛집 갯수");
+            Matjip_chart.Series[1].ChartArea = "ChartArea2";
+            Matjip_chart.ChartAreas[1].BackColor = SystemColors.Control;
+            Matjip_chart.Series[1].Points.DataBindXY(x, y2);
+           
+            Matjip_chart.ChartAreas.Add("ChartArea3");
+            Matjip_chart.Series.Add("카테고리 별 맛집 갯수");
+            Matjip_chart.Series[2].ChartArea = "ChartArea3";
+            Matjip_chart.ChartAreas[2].BackColor = SystemColors.Control;
+            Matjip_chart.Series[2].Points.DataBindXY(x1, y3);
 
             // 막대 그래프마다 값 나오게
-            chart1.Series[0].IsValueShownAsLabel = true;
-            chart1.Series[1].IsValueShownAsLabel = true;
-            chart1.Series[2].IsValueShownAsLabel = true;
+            Matjip_chart.Series[0].IsValueShownAsLabel = true;
+            Matjip_chart.Series[1].IsValueShownAsLabel = true;
+            Matjip_chart.Series[2].IsValueShownAsLabel = true;
 
             // 그래프 격자 제거
-            chart1.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
-            chart1.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
-            chart1.ChartAreas[1].AxisX.MajorGrid.Enabled = false;
-            chart1.ChartAreas[1].AxisY.MajorGrid.Enabled = false;
-            chart1.ChartAreas[2].AxisX.MajorGrid.Enabled = false;
-            chart1.ChartAreas[2].AxisY.MajorGrid.Enabled = false;
+            Matjip_chart.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            Matjip_chart.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            Matjip_chart.ChartAreas[1].AxisX.MajorGrid.Enabled = false;
+            Matjip_chart.ChartAreas[1].AxisY.MajorGrid.Enabled = false;
+            Matjip_chart.ChartAreas[2].AxisX.MajorGrid.Enabled = false;
+            Matjip_chart.ChartAreas[2].AxisY.MajorGrid.Enabled = false;
 
         }
 
