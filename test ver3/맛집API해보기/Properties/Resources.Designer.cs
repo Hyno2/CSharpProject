@@ -243,6 +243,16 @@ namespace 맛집API해보기.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 삭제1 {
+            get {
+                object obj = ResourceManager.GetObject("삭제1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 쌓인눈 {
             get {
                 object obj = ResourceManager.GetObject("쌓인눈", resourceCulture);

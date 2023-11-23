@@ -124,6 +124,9 @@
   <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="제목을 입력해주세요_-0021" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\제목을 입력해주세요_-0021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="칭구칭긔" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\칭구칭긔.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,14 +181,14 @@
   <data name="촤알트2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\촤알트2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="촤알트" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\촤알트.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="제목을 입력해주세요_-002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\제목을 입력해주세요_-002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="차트" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\차트.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="제목을 입력해주세요_-002" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\제목을 입력해주세요_-002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="촤알트" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\촤알트.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dd1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dd1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,6 +214,9 @@
   <data name="첫화면_크리스마스" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\첫화면_크리스마스.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dsBuffer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dsBuffer.bmp1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="촤알트1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\촤알트1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -220,10 +226,7 @@
   <data name="삭제" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\삭제.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="제목을 입력해주세요_-0021" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\제목을 입력해주세요_-0021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dsBuffer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dsBuffer.bmp1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="삭제1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\삭제1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

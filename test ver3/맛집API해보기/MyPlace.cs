@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace 맛집API해보기
 {
@@ -37,6 +38,11 @@ namespace 맛집API해보기
                 if(myPlaceData.Rows.Count > 0 )
                     MyPlace_dataGridView.DataSource = myPlaceData;
                 MyPlace_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                MyPlace_dataGridView.Columns[0].HeaderText = "상호명";
+                MyPlace_dataGridView.Columns[1].HeaderText = "카테고리";
+                MyPlace_dataGridView.Columns[2].HeaderText = "주소";
+                MyPlace_dataGridView.Columns[3].HeaderText = "전화번호";
+               
             }
             catch (Exception ex)
             {

@@ -271,5 +271,8 @@
   <ItemGroup>
     <None Include="Resources\dsBuffer.bmp1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\삭제1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

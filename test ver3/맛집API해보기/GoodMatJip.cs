@@ -12,13 +12,13 @@ namespace 맛집API해보기
         // public string cnt { get; set; }
         // public string OPENDATA_ID { get; set; }
 
-        public string FD_CS { get; set; }// 카테고리
-        public string BZ_NM { get; set; }// 상호명
-        public string GNG_CS { get; set; }// 주소
-        public string MBZ_HR { get; set; }// 영업시간
-        public string MNU { get; set; }// 메뉴
-        public string TLNO { get; set; }    // 매장 전화번호
-        public string SMPL_DESC { get; set; }// 매장설명
-        public string BKN_YN { get; set; }  // 예약가능 여부
+        public string 카테고리 { get; set; }// 카테고리
+        public string 상호명 { get; set; }// 상호명
+        public string 주소 { get; set; }// 주소
+        public string 영업시간 { get; set; }// 영업시간
+        public string 메뉴 { get; set; }// 메뉴
+        public string 전화번호 { get; set; }    // 매장 전화번호
+        public string 매장설명 { get; set; }// 매장설명
+        public string 예약가능여부{ get; set; }  // 예약가능 여부
     }
 }

@@ -26,7 +26,7 @@ namespace 맛집API해보기
                 //2. LINQ
                 var mylist = from c in matJips
 
-                             where c.GNG_CS.Contains(" " + gu + " ")
+                             where c.주소.Contains(" " + gu + " ")
 
 
                              select c;
@@ -50,7 +50,7 @@ namespace 맛집API해보기
                 // LINQ 쿼리로 카테고리에 해당하는 데이터 조회
                 var mylist = from c in SelectMatJips
 
-                             where c.FD_CS.Contains(cg)
+                             where c.카테고리.Contains(cg)
 
                              select c;
                 SelectCategoryMatJips = new List<GoodMatJip>();
@@ -70,14 +70,14 @@ namespace 맛집API해보기
             {
                 GoodMatJip Matjips = new GoodMatJip();
                 //  Matjips.OPENDATA_ID = item["OPENDATA_ID"].ToString();
-                Matjips.GNG_CS = item["GNG_CS"].ToString();// 주소
-                Matjips.FD_CS = item["FD_CS"].ToString(); // 카테고리
-                Matjips.BZ_NM = item["BZ_NM"].ToString(); // 매장명
-                Matjips.MBZ_HR = item["MBZ_HR"].ToString(); // 영업시간
-                Matjips.MNU = item["MNU"].ToString().Replace("<br />", " "); //메뉴
-                Matjips.TLNO = item["TLNO"].ToString();// 매장 전화번호
-                Matjips.SMPL_DESC = item["SMPL_DESC"].ToString().Replace("<br />", " "); // 매장소개
-                Matjips.BKN_YN = item["BKN_YN"].ToString(); // 예약가능여부
+                Matjips.주소 = item["GNG_CS"].ToString();// 주소
+                Matjips.카테고리 = item["FD_CS"].ToString(); // 카테고리
+                Matjips.상호명 = item["BZ_NM"].ToString(); // 매장명
+                Matjips.영업시간 = item["MBZ_HR"].ToString(); // 영업시간
+                Matjips.메뉴 = item["MNU"].ToString().Replace("<br />", " "); //메뉴
+                Matjips.전화번호 = item["TLNO"].ToString();// 매장 전화번호
+                Matjips.매장설명 = item["SMPL_DESC"].ToString().Replace("<br />", " "); // 매장소개
+                Matjips.예약가능여부 = item["BKN_YN"].ToString(); // 예약가능여부
                 matJips.Add(Matjips);
             }
         }

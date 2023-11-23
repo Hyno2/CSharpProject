@@ -57,6 +57,7 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.MyPlace_button = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Matjip_dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -346,12 +347,22 @@
             this.MyPlace_button.UseVisualStyleBackColor = false;
             this.MyPlace_button.Click += new System.EventHandler(this.MyPlace_button_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(710, 410);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(89, 12);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "즐겨찾기  추가!";
+            // 
             // MatjipDataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1161, 638);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.MyPlace_button);
             this.Controls.Add(this.webBrowser1);
@@ -425,5 +436,6 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button MyPlace_button;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label9;
     }
 }

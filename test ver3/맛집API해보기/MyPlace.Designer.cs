@@ -31,9 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyPlace));
             this.User_label = new System.Windows.Forms.Label();
             this.MyPlace_dataGridView = new System.Windows.Forms.DataGridView();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Delete_button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.MyPlace_dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +62,17 @@
             this.MyPlace_dataGridView.RowTemplate.Height = 23;
             this.MyPlace_dataGridView.Size = new System.Drawing.Size(582, 242);
             this.MyPlace_dataGridView.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::맛집API해보기.Properties.Resources.삭제1;
+            this.pictureBox2.Location = new System.Drawing.Point(540, 166);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(57, 36);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
             // 
             // Delete_button
             // 
@@ -93,6 +106,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Delete_button);
             this.Controls.Add(this.MyPlace_dataGridView);
             this.Controls.Add(this.User_label);
@@ -100,6 +114,7 @@
             this.Name = "MyPlace";
             this.Size = new System.Drawing.Size(680, 580);
             ((System.ComponentModel.ISupportInitialize)(this.MyPlace_dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -112,5 +127,6 @@
         private System.Windows.Forms.DataGridView MyPlace_dataGridView;
         private System.Windows.Forms.Button Delete_button;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

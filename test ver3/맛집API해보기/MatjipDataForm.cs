@@ -109,18 +109,18 @@ namespace 맛집API해보기
         private void dataGridViewCellClick(object sender, DataGridViewCellEventArgs e)
         {
             GoodMatJip m = (sender as DataGridView).CurrentRow.DataBoundItem as GoodMatJip;
-            상호명.Text = m.BZ_NM;
-            주소.Text = m.GNG_CS;
-            영업시간.Text = m.MBZ_HR;
-            메뉴.Text = m.MNU;
-            매장설명.Text = m.SMPL_DESC;
-            매장전화번호.Text = m.TLNO;
-            카테고리.Text = m.FD_CS;
-            예약가능여부.Text = m.BKN_YN;
+            상호명.Text = m.상호명;
+            주소.Text = m.주소;
+            영업시간.Text = m.영업시간;
+            메뉴.Text = m.메뉴;
+            매장설명.Text = m.매장설명;
+            매장전화번호.Text = m.전화번호;
+            카테고리.Text = m.카테고리;
+            예약가능여부.Text = m.예약가능여부;
 
             try
             {
-                Locale temp = KakaoAPI.SelectMap(m.GNG_CS);
+                Locale temp = KakaoAPI.SelectMap(m.주소);
                 object[] pos = new object[] { temp.Lat, temp.Lng };
                 HtmlDocument hdoc = webBrowser1.Document;
                 hdoc.InvokeScript("setCenter", pos);
