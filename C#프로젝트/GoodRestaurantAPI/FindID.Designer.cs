@@ -96,14 +96,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 361);
+            this.ClientSize = new System.Drawing.Size(300, 400);
             this.Controls.Add(this.FIDCancel_button);
             this.Controls.Add(this.FId_label);
             this.Controls.Add(this.FIDNCheck_button);
             this.Controls.Add(this.FIDName_textBox);
             this.Controls.Add(this.FIDName_label);
             this.Controls.Add(this.FId_pictureBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(300, 400);
             this.MinimumSize = new System.Drawing.Size(300, 400);
             this.Name = "FindID";

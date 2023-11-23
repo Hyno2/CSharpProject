@@ -114,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 361);
+            this.ClientSize = new System.Drawing.Size(300, 400);
             this.Controls.Add(this.FPWDCancel_button);
             this.Controls.Add(this.FPWDQ_textBox);
             this.Controls.Add(this.FPWDQ_label);
@@ -123,7 +123,6 @@
             this.Controls.Add(this.FPWDID_label);
             this.Controls.Add(this.FPWD_label);
             this.Controls.Add(this.FPWD_pictureBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(300, 400);
             this.MinimumSize = new System.Drawing.Size(300, 400);
             this.Name = "FindPWD";

@@ -163,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 661);
+            this.ClientSize = new System.Drawing.Size(450, 700);
             this.Controls.Add(this.SignUpCancel_button);
             this.Controls.Add(this.SignUpCheck_button);
             this.Controls.Add(this.DCheckID_button);
@@ -177,7 +177,6 @@
             this.Controls.Add(this.SignUpID_label);
             this.Controls.Add(this.SignUp_label);
             this.Controls.Add(this.SignUp_pictureBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(450, 700);
             this.MinimumSize = new System.Drawing.Size(450, 700);
             this.Name = "Sign_Up";
