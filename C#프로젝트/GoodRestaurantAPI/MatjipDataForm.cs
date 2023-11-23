@@ -122,7 +122,7 @@ namespace GoodRestaurantAPI
             {
                 Locale temp = KakaoAPI.SelectMap(m.주소);
                 object[] pos = new object[] { temp.Lat, temp.Lng };
-                HtmlDocument hdoc = webBrowser1.Document;
+                HtmlDocument hdoc = Majip_webBrowser.Document;
                 hdoc.InvokeScript("setCenter", pos);
 
             }

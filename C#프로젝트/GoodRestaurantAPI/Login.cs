@@ -17,15 +17,40 @@ namespace GoodRestaurantAPI
         public Login()
         {
             InitializeComponent();
-            this.buttonLogin.Click += buttonLogin_Click;
-            this.buttonCancel.Click += buttonCancel_Click;
-            this.textBox2PWD.KeyDown += passwordTextBox_KeyDown;
+            this.Login_button.Click += buttonLogin_Click;
+            this.LoginCancel_button.Click += buttonCancel_Click;
+            this.LoginPWD_textBox.KeyDown += passwordTextBox_KeyDown;
 
             // 폼에 KeyDown 이벤트 핸들러 등록
             this.KeyPreview = true;
             this.KeyDown += FormEvent.CloseFormOnEscKey;
+            // 텍스트체인지 이벤트 핸들러
+            LoginID_textBox.TextChanged += textBoxID_TextChanged;
+            LoginPWD_textBox.TextChanged += textBox2PWD_TextChanged;
+        }
+        // 텍스트 박스의 TextChanged 이벤트 핸들러
+        private void textBoxID_TextChanged(object sender, EventArgs e)
+        {
+            // 입력된 글자 수가 10자를 초과하면 마지막 10자를 자름
+            if (LoginID_textBox.Text.Length > 10)
+            {
+                LoginID_textBox.Text = LoginID_textBox.Text.Substring(0, 10);
+                LoginID_textBox.SelectionStart = LoginID_textBox.Text.Length;
+                LoginID_textBox.SelectionLength = 0;
+            }
         }
 
+        // 텍스트 박스의 TextChanged 이벤트 핸들러
+        private void textBox2PWD_TextChanged(object sender, EventArgs e)
+        {
+            // 입력된 글자 수가 10자를 초과하면 마지막 10자를 자름
+            if (LoginPWD_textBox.Text.Length > 10)
+            {
+                LoginPWD_textBox.Text = LoginPWD_textBox.Text.Substring(0, 10);
+                LoginPWD_textBox.SelectionStart = LoginPWD_textBox.Text.Length;
+                LoginPWD_textBox.SelectionLength = 0;
+            }
+        }
         // 엔터키 입력시 로그인되는 함수
         private void passwordTextBox_KeyDown(object sender, KeyEventArgs e)
         {
@@ -50,8 +75,8 @@ namespace GoodRestaurantAPI
         {
             try
             {
-                string login_id = textBoxID.Text;
-                string login_password = textBox2PWD.Text;
+                string login_id = LoginID_textBox.Text;
+                string login_password = LoginPWD_textBox.Text;
 
                 bool login = DBUserHelper.Login(login_id, login_password);
 
@@ -61,14 +86,14 @@ namespace GoodRestaurantAPI
                     // Login 폼 숨기고
                     Hide();
                     // Login 폼 텍스트박스 초기화
-                    textBoxID.Text = "";
-                    textBox2PWD.Text = "";
+                    LoginID_textBox.Text = "";
+                    LoginPWD_textBox.Text = "";
 
                     //  // 현재 로그인한 사용자의 ID를 가져오기
                     string currentUserId = DBUserHelper.GetCurrentUserId();
 
                     // 로그인했을때 Form1 다시 띄우기 
-                    Form1 form = new Form1();
+                    MainForm form = new MainForm();
                     form.ShowDialog();
                     Show();
                 }

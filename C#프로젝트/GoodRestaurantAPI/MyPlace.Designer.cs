@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyPlace));
             this.User_label = new System.Windows.Forms.Label();
             this.MyPlace_dataGridView = new System.Windows.Forms.DataGridView();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Delete_button = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DelMyPlaceLabel_pictureBox = new System.Windows.Forms.PictureBox();
+            this.DelMyPlace_button = new System.Windows.Forms.Button();
+            this.MyPlace_pictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.MyPlace_dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DelMyPlaceLabel_pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyPlace_pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // User_label
@@ -63,59 +63,59 @@
             this.MyPlace_dataGridView.Size = new System.Drawing.Size(582, 242);
             this.MyPlace_dataGridView.TabIndex = 1;
             // 
-            // pictureBox2
+            // DelMyPlaceLabel_pictureBox
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::GoodRestaurantAPI.Properties.Resources.삭제1;
-            this.pictureBox2.Location = new System.Drawing.Point(540, 166);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.DelMyPlaceLabel_pictureBox.BackColor = System.Drawing.Color.White;
+            this.DelMyPlaceLabel_pictureBox.Image = global::GoodRestaurantAPI.Properties.Resources.삭제1;
+            this.DelMyPlaceLabel_pictureBox.Location = new System.Drawing.Point(540, 166);
+            this.DelMyPlaceLabel_pictureBox.Name = "DelMyPlaceLabel_pictureBox";
+            this.DelMyPlaceLabel_pictureBox.Size = new System.Drawing.Size(57, 36);
+            this.DelMyPlaceLabel_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DelMyPlaceLabel_pictureBox.TabIndex = 4;
+            this.DelMyPlaceLabel_pictureBox.TabStop = false;
             // 
-            // Delete_button
+            // DelMyPlace_button
             // 
-            this.Delete_button.BackColor = System.Drawing.Color.White;
-            this.Delete_button.BackgroundImage = global::GoodRestaurantAPI.Properties.Resources.제목을_입력해주세요__002;
-            this.Delete_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Delete_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Delete_button.FlatAppearance.BorderSize = 0;
-            this.Delete_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Delete_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Delete_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_button.Location = new System.Drawing.Point(535, 208);
-            this.Delete_button.Name = "Delete_button";
-            this.Delete_button.Size = new System.Drawing.Size(57, 53);
-            this.Delete_button.TabIndex = 2;
-            this.Delete_button.UseVisualStyleBackColor = false;
-            this.Delete_button.Click += new System.EventHandler(this.Delete_button_Click);
+            this.DelMyPlace_button.BackColor = System.Drawing.Color.White;
+            this.DelMyPlace_button.BackgroundImage = global::GoodRestaurantAPI.Properties.Resources.제목을_입력해주세요__002;
+            this.DelMyPlace_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.DelMyPlace_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DelMyPlace_button.FlatAppearance.BorderSize = 0;
+            this.DelMyPlace_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.DelMyPlace_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.DelMyPlace_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DelMyPlace_button.Location = new System.Drawing.Point(535, 208);
+            this.DelMyPlace_button.Name = "DelMyPlace_button";
+            this.DelMyPlace_button.Size = new System.Drawing.Size(57, 53);
+            this.DelMyPlace_button.TabIndex = 2;
+            this.DelMyPlace_button.UseVisualStyleBackColor = false;
+            this.DelMyPlace_button.Click += new System.EventHandler(this.Delete_button_Click);
             // 
-            // pictureBox1
+            // MyPlace_pictureBox
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(34, 44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(582, 233);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.MyPlace_pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("MyPlace_pictureBox.Image")));
+            this.MyPlace_pictureBox.Location = new System.Drawing.Point(34, 44);
+            this.MyPlace_pictureBox.Name = "MyPlace_pictureBox";
+            this.MyPlace_pictureBox.Size = new System.Drawing.Size(582, 233);
+            this.MyPlace_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MyPlace_pictureBox.TabIndex = 3;
+            this.MyPlace_pictureBox.TabStop = false;
             // 
             // MyPlace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.Delete_button);
+            this.Controls.Add(this.DelMyPlaceLabel_pictureBox);
+            this.Controls.Add(this.DelMyPlace_button);
             this.Controls.Add(this.MyPlace_dataGridView);
             this.Controls.Add(this.User_label);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.MyPlace_pictureBox);
             this.Name = "MyPlace";
             this.Size = new System.Drawing.Size(680, 580);
             ((System.ComponentModel.ISupportInitialize)(this.MyPlace_dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DelMyPlaceLabel_pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyPlace_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,8 +125,8 @@
 
         private System.Windows.Forms.Label User_label;
         private System.Windows.Forms.DataGridView MyPlace_dataGridView;
-        private System.Windows.Forms.Button Delete_button;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button DelMyPlace_button;
+        private System.Windows.Forms.PictureBox MyPlace_pictureBox;
+        private System.Windows.Forms.PictureBox DelMyPlaceLabel_pictureBox;
     }
 }

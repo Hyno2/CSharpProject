@@ -46,20 +46,20 @@
             this.매장설명 = new System.Windows.Forms.TextBox();
             this.매장전화번호 = new System.Windows.Forms.TextBox();
             this.메뉴 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.상호명_label = new System.Windows.Forms.Label();
+            this.주소_label = new System.Windows.Forms.Label();
+            this.종류_label = new System.Windows.Forms.Label();
+            this.영업시간_label = new System.Windows.Forms.Label();
+            this.예약_label = new System.Windows.Forms.Label();
+            this.설명_label = new System.Windows.Forms.Label();
+            this.번호_label = new System.Windows.Forms.Label();
+            this.메뉴label = new System.Windows.Forms.Label();
+            this.Majip_webBrowser = new System.Windows.Forms.WebBrowser();
+            this.Matjip_pictureBox = new System.Windows.Forms.PictureBox();
             this.MyPlace_button = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.ADDMyPlace_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Matjip_dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Matjip_pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // Matjip_dataGridView
@@ -230,104 +230,104 @@
             this.메뉴.Size = new System.Drawing.Size(324, 21);
             this.메뉴.TabIndex = 17;
             // 
-            // label1
+            // 상호명_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(756, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 16);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "상호명";
+            this.상호명_label.AutoSize = true;
+            this.상호명_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.상호명_label.Location = new System.Drawing.Point(756, 60);
+            this.상호명_label.Name = "상호명_label";
+            this.상호명_label.Size = new System.Drawing.Size(40, 16);
+            this.상호명_label.TabIndex = 18;
+            this.상호명_label.Text = "상호명";
             // 
-            // label2
+            // 주소_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(762, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 16);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "주소";
+            this.주소_label.AutoSize = true;
+            this.주소_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.주소_label.Location = new System.Drawing.Point(762, 98);
+            this.주소_label.Name = "주소_label";
+            this.주소_label.Size = new System.Drawing.Size(29, 16);
+            this.주소_label.TabIndex = 19;
+            this.주소_label.Text = "주소";
             // 
-            // label3
+            // 종류_label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(762, 136);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 16);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "종류";
+            this.종류_label.AutoSize = true;
+            this.종류_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.종류_label.Location = new System.Drawing.Point(762, 136);
+            this.종류_label.Name = "종류_label";
+            this.종류_label.Size = new System.Drawing.Size(29, 16);
+            this.종류_label.TabIndex = 20;
+            this.종류_label.Text = "종류";
             // 
-            // label4
+            // 영업시간_label
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(750, 174);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 16);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "영업시간";
+            this.영업시간_label.AutoSize = true;
+            this.영업시간_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.영업시간_label.Location = new System.Drawing.Point(750, 174);
+            this.영업시간_label.Name = "영업시간_label";
+            this.영업시간_label.Size = new System.Drawing.Size(51, 16);
+            this.영업시간_label.TabIndex = 21;
+            this.영업시간_label.Text = "영업시간";
             // 
-            // label5
+            // 예약_label
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(738, 212);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 16);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "예약가능여부";
+            this.예약_label.AutoSize = true;
+            this.예약_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.예약_label.Location = new System.Drawing.Point(738, 212);
+            this.예약_label.Name = "예약_label";
+            this.예약_label.Size = new System.Drawing.Size(73, 16);
+            this.예약_label.TabIndex = 22;
+            this.예약_label.Text = "예약가능여부";
             // 
-            // label6
+            // 설명_label
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(750, 250);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 16);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "매장설명";
+            this.설명_label.AutoSize = true;
+            this.설명_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.설명_label.Location = new System.Drawing.Point(750, 250);
+            this.설명_label.Name = "설명_label";
+            this.설명_label.Size = new System.Drawing.Size(51, 16);
+            this.설명_label.TabIndex = 23;
+            this.설명_label.Text = "매장설명";
             // 
-            // label7
+            // 번호_label
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label7.Location = new System.Drawing.Point(750, 288);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 16);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "전화번호";
+            this.번호_label.AutoSize = true;
+            this.번호_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.번호_label.Location = new System.Drawing.Point(750, 288);
+            this.번호_label.Name = "번호_label";
+            this.번호_label.Size = new System.Drawing.Size(51, 16);
+            this.번호_label.TabIndex = 24;
+            this.번호_label.Text = "전화번호";
             // 
-            // label8
+            // 메뉴label
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8.Location = new System.Drawing.Point(762, 326);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 16);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "메뉴";
+            this.메뉴label.AutoSize = true;
+            this.메뉴label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.메뉴label.Location = new System.Drawing.Point(762, 326);
+            this.메뉴label.Name = "메뉴label";
+            this.메뉴label.Size = new System.Drawing.Size(29, 16);
+            this.메뉴label.TabIndex = 25;
+            this.메뉴label.Text = "메뉴";
             // 
-            // webBrowser1
+            // Majip_webBrowser
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(801, 359);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(344, 250);
-            this.webBrowser1.TabIndex = 26;
-            this.webBrowser1.Url = new System.Uri("https://hyojeongchoe.github.io/glowing-octo-happiness/mymap.html", System.UriKind.Absolute);
+            this.Majip_webBrowser.Location = new System.Drawing.Point(801, 359);
+            this.Majip_webBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.Majip_webBrowser.Name = "Majip_webBrowser";
+            this.Majip_webBrowser.Size = new System.Drawing.Size(344, 250);
+            this.Majip_webBrowser.TabIndex = 26;
+            this.Majip_webBrowser.Url = new System.Uri("https://hyojeongchoe.github.io/glowing-octo-happiness/mymap.html", System.UriKind.Absolute);
             // 
-            // pictureBox3
+            // Matjip_pictureBox
             // 
-            this.pictureBox3.Image = global::GoodRestaurantAPI.Properties.Resources.맛집쓰로고1;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(160, 57);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 28;
-            this.pictureBox3.TabStop = false;
+            this.Matjip_pictureBox.Image = global::GoodRestaurantAPI.Properties.Resources.맛집쓰로고1;
+            this.Matjip_pictureBox.Location = new System.Drawing.Point(0, 0);
+            this.Matjip_pictureBox.Name = "Matjip_pictureBox";
+            this.Matjip_pictureBox.Size = new System.Drawing.Size(160, 57);
+            this.Matjip_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Matjip_pictureBox.TabIndex = 28;
+            this.Matjip_pictureBox.TabStop = false;
             // 
             // MyPlace_button
             // 
@@ -347,14 +347,14 @@
             this.MyPlace_button.UseVisualStyleBackColor = false;
             this.MyPlace_button.Click += new System.EventHandler(this.MyPlace_button_Click);
             // 
-            // label9
+            // ADDMyPlace_label
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(710, 410);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 12);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "즐겨찾기  추가!";
+            this.ADDMyPlace_label.AutoSize = true;
+            this.ADDMyPlace_label.Location = new System.Drawing.Point(710, 410);
+            this.ADDMyPlace_label.Name = "ADDMyPlace_label";
+            this.ADDMyPlace_label.Size = new System.Drawing.Size(89, 12);
+            this.ADDMyPlace_label.TabIndex = 29;
+            this.ADDMyPlace_label.Text = "즐겨찾기  추가!";
             // 
             // MatjipDataForm
             // 
@@ -362,18 +362,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1161, 638);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.ADDMyPlace_label);
+            this.Controls.Add(this.Matjip_pictureBox);
             this.Controls.Add(this.MyPlace_button);
-            this.Controls.Add(this.webBrowser1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Majip_webBrowser);
+            this.Controls.Add(this.메뉴label);
+            this.Controls.Add(this.번호_label);
+            this.Controls.Add(this.설명_label);
+            this.Controls.Add(this.예약_label);
+            this.Controls.Add(this.영업시간_label);
+            this.Controls.Add(this.종류_label);
+            this.Controls.Add(this.주소_label);
+            this.Controls.Add(this.상호명_label);
             this.Controls.Add(this.메뉴);
             this.Controls.Add(this.매장전화번호);
             this.Controls.Add(this.매장설명);
@@ -394,12 +394,13 @@
             this.Controls.Add(this.Matjip_dataGridView);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MatjipDataForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MatjipDataForm";
             this.Load += new System.EventHandler(this.MatjipDataForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Matjip_dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Matjip_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -425,17 +426,17 @@
         private System.Windows.Forms.TextBox 매장설명;
         private System.Windows.Forms.TextBox 매장전화번호;
         private System.Windows.Forms.TextBox 메뉴;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Label 상호명_label;
+        private System.Windows.Forms.Label 주소_label;
+        private System.Windows.Forms.Label 종류_label;
+        private System.Windows.Forms.Label 영업시간_label;
+        private System.Windows.Forms.Label 예약_label;
+        private System.Windows.Forms.Label 설명_label;
+        private System.Windows.Forms.Label 번호_label;
+        private System.Windows.Forms.Label 메뉴label;
+        private System.Windows.Forms.WebBrowser Majip_webBrowser;
         private System.Windows.Forms.Button MyPlace_button;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox Matjip_pictureBox;
+        private System.Windows.Forms.Label ADDMyPlace_label;
     }
 }

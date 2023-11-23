@@ -28,107 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.FNCheckbutton = new System.Windows.Forms.Button();
-            this.FNametextBox = new System.Windows.Forms.TextBox();
-            this.FNamelabel = new System.Windows.Forms.Label();
-            this.FQtextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.CancelFPWDbutton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.FPWD_label = new System.Windows.Forms.Label();
+            this.FPWDNCheck_button = new System.Windows.Forms.Button();
+            this.FPWDName_textBox = new System.Windows.Forms.TextBox();
+            this.FPWDID_label = new System.Windows.Forms.Label();
+            this.FPWDQ_textBox = new System.Windows.Forms.TextBox();
+            this.FPWDQ_label = new System.Windows.Forms.Label();
+            this.FPWDCancel_button = new System.Windows.Forms.Button();
+            this.FPWD_pictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.FPWD_pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // FPWD_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(56, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "비밀번호 찾기";
+            this.FPWD_label.AutoSize = true;
+            this.FPWD_label.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.FPWD_label.Location = new System.Drawing.Point(56, 47);
+            this.FPWD_label.Name = "FPWD_label";
+            this.FPWD_label.Size = new System.Drawing.Size(169, 24);
+            this.FPWD_label.TabIndex = 4;
+            this.FPWD_label.Text = "비밀번호 찾기";
             // 
-            // FNCheckbutton
+            // FPWDNCheck_button
             // 
-            this.FNCheckbutton.Location = new System.Drawing.Point(113, 186);
-            this.FNCheckbutton.Name = "FNCheckbutton";
-            this.FNCheckbutton.Size = new System.Drawing.Size(75, 23);
-            this.FNCheckbutton.TabIndex = 7;
-            this.FNCheckbutton.Text = "확인";
-            this.FNCheckbutton.UseVisualStyleBackColor = true;
-            this.FNCheckbutton.Click += new System.EventHandler(this.FNCheckbutton_Click);
+            this.FPWDNCheck_button.Location = new System.Drawing.Point(113, 186);
+            this.FPWDNCheck_button.Name = "FPWDNCheck_button";
+            this.FPWDNCheck_button.Size = new System.Drawing.Size(75, 23);
+            this.FPWDNCheck_button.TabIndex = 7;
+            this.FPWDNCheck_button.Text = "확인";
+            this.FPWDNCheck_button.UseVisualStyleBackColor = true;
+            this.FPWDNCheck_button.Click += new System.EventHandler(this.FNCheckbutton_Click);
             // 
-            // FNametextBox
+            // FPWDName_textBox
             // 
-            this.FNametextBox.Location = new System.Drawing.Point(150, 113);
-            this.FNametextBox.Name = "FNametextBox";
-            this.FNametextBox.Size = new System.Drawing.Size(100, 21);
-            this.FNametextBox.TabIndex = 6;
+            this.FPWDName_textBox.Location = new System.Drawing.Point(150, 113);
+            this.FPWDName_textBox.Name = "FPWDName_textBox";
+            this.FPWDName_textBox.Size = new System.Drawing.Size(100, 21);
+            this.FPWDName_textBox.TabIndex = 6;
             // 
-            // FNamelabel
+            // FPWDID_label
             // 
-            this.FNamelabel.AutoSize = true;
-            this.FNamelabel.Location = new System.Drawing.Point(93, 116);
-            this.FNamelabel.Name = "FNamelabel";
-            this.FNamelabel.Size = new System.Drawing.Size(41, 12);
-            this.FNamelabel.TabIndex = 5;
-            this.FNamelabel.Text = "아이디";
+            this.FPWDID_label.AutoSize = true;
+            this.FPWDID_label.Location = new System.Drawing.Point(93, 116);
+            this.FPWDID_label.Name = "FPWDID_label";
+            this.FPWDID_label.Size = new System.Drawing.Size(41, 12);
+            this.FPWDID_label.TabIndex = 5;
+            this.FPWDID_label.Text = "아이디";
             // 
-            // FQtextBox
+            // FPWDQ_textBox
             // 
-            this.FQtextBox.Location = new System.Drawing.Point(150, 150);
-            this.FQtextBox.Name = "FQtextBox";
-            this.FQtextBox.Size = new System.Drawing.Size(100, 21);
-            this.FQtextBox.TabIndex = 9;
+            this.FPWDQ_textBox.Location = new System.Drawing.Point(150, 150);
+            this.FPWDQ_textBox.Name = "FPWDQ_textBox";
+            this.FPWDQ_textBox.Size = new System.Drawing.Size(100, 21);
+            this.FPWDQ_textBox.TabIndex = 9;
             // 
-            // label2
+            // FPWDQ_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 153);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 12);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "가장 좋아하는 여행지?";
+            this.FPWDQ_label.AutoSize = true;
+            this.FPWDQ_label.Location = new System.Drawing.Point(15, 153);
+            this.FPWDQ_label.Name = "FPWDQ_label";
+            this.FPWDQ_label.Size = new System.Drawing.Size(127, 12);
+            this.FPWDQ_label.TabIndex = 8;
+            this.FPWDQ_label.Text = "가장 좋아하는 여행지?";
             // 
-            // CancelFPWDbutton
+            // FPWDCancel_button
             // 
-            this.CancelFPWDbutton.Location = new System.Drawing.Point(201, 186);
-            this.CancelFPWDbutton.Name = "CancelFPWDbutton";
-            this.CancelFPWDbutton.Size = new System.Drawing.Size(75, 23);
-            this.CancelFPWDbutton.TabIndex = 10;
-            this.CancelFPWDbutton.Text = "취소";
-            this.CancelFPWDbutton.UseVisualStyleBackColor = true;
-            this.CancelFPWDbutton.Click += new System.EventHandler(this.CancelFPWDbutton_Click);
+            this.FPWDCancel_button.Location = new System.Drawing.Point(201, 186);
+            this.FPWDCancel_button.Name = "FPWDCancel_button";
+            this.FPWDCancel_button.Size = new System.Drawing.Size(75, 23);
+            this.FPWDCancel_button.TabIndex = 10;
+            this.FPWDCancel_button.Text = "취소";
+            this.FPWDCancel_button.UseVisualStyleBackColor = true;
+            this.FPWDCancel_button.Click += new System.EventHandler(this.CancelFPWDbutton_Click);
             // 
-            // pictureBox1
+            // FPWD_pictureBox
             // 
-            this.pictureBox1.Image = global::GoodRestaurantAPI.Properties.Resources.비밀번호찾기;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 174);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(212, 192);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.FPWD_pictureBox.Image = global::GoodRestaurantAPI.Properties.Resources.비밀번호찾기;
+            this.FPWD_pictureBox.Location = new System.Drawing.Point(8, 174);
+            this.FPWD_pictureBox.Name = "FPWD_pictureBox";
+            this.FPWD_pictureBox.Size = new System.Drawing.Size(212, 192);
+            this.FPWD_pictureBox.TabIndex = 11;
+            this.FPWD_pictureBox.TabStop = false;
             // 
             // FindPWD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 361);
-            this.Controls.Add(this.CancelFPWDbutton);
-            this.Controls.Add(this.FQtextBox);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.FNCheckbutton);
-            this.Controls.Add(this.FNametextBox);
-            this.Controls.Add(this.FNamelabel);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.FPWDCancel_button);
+            this.Controls.Add(this.FPWDQ_textBox);
+            this.Controls.Add(this.FPWDQ_label);
+            this.Controls.Add(this.FPWDNCheck_button);
+            this.Controls.Add(this.FPWDName_textBox);
+            this.Controls.Add(this.FPWDID_label);
+            this.Controls.Add(this.FPWD_label);
+            this.Controls.Add(this.FPWD_pictureBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(300, 400);
             this.MinimumSize = new System.Drawing.Size(300, 400);
             this.Name = "FindPWD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FindPWD";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FPWD_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,13 +137,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button FNCheckbutton;
-        private System.Windows.Forms.TextBox FNametextBox;
-        private System.Windows.Forms.Label FNamelabel;
-        private System.Windows.Forms.TextBox FQtextBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button CancelFPWDbutton;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label FPWD_label;
+        private System.Windows.Forms.Button FPWDNCheck_button;
+        private System.Windows.Forms.TextBox FPWDName_textBox;
+        private System.Windows.Forms.Label FPWDID_label;
+        private System.Windows.Forms.TextBox FPWDQ_textBox;
+        private System.Windows.Forms.Label FPWDQ_label;
+        private System.Windows.Forms.Button FPWDCancel_button;
+        private System.Windows.Forms.PictureBox FPWD_pictureBox;
     }
 }
