@@ -35,7 +35,7 @@ namespace GoodRestaurantAPI
                 DataTable myPlaceData = DBMyPlaceHelper.GetMyPlaceData(DBUserHelper.GetCurrentUserId());
                 MyPlace_dataGridView.DataSource = null;
                 // DataGridView에 데이터 바인딩
-                if(myPlaceData.Rows.Count > 0 )
+                if(myPlaceData.Rows.Count >= 0 )
                     MyPlace_dataGridView.DataSource = myPlaceData;
                 MyPlace_dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 MyPlace_dataGridView.Columns[0].HeaderText = "상호명";
