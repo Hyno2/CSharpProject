@@ -9,6 +9,6 @@
 
 ### 🛠 활용 도구
 <img src="https://img.shields.io/badge/visualstudio-5C2D91?style=flat-square&logo=visualstudio&logoColor=white"/></a>
-<img src="https://img.shields.io/badge/microsoftsqlserver-CC2927?style=for-the-badge&#x26;logo=microsoftsqlserver&#x26;logoColor=white"/>
+<img src="https://img.shields.io/badge/microsoftsqlserver-CC2927?style=for-the-badge&#x26;logo=microsoftsqlserver&logoColor=white"/>
 
 
